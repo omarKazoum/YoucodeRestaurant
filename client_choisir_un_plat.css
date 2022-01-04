@@ -1,0 +1,28 @@
+body{
+    background-image: url(image_bg.jpg);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+#buckground{
+    width: auto;
+    height: auto;
+    
+}
+.ticket--red{
+    
+    background-color: rgb(212, 18, 18);
+}
+.ticket--green{
+    
+    background-color: rgb(11, 182, 11);
+}
+.ticket{
+     border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+}
+.row1{
+    display: flex;
+}
