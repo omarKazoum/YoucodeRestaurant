@@ -1,12 +1,10 @@
 body{
-    margin:  2%;
-    padding: 0px;
+    
     box-sizing: border-box;
     background-image: url("image_bg.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
-    background-position:center;
-    background-attachment: fixed;
+    opacity: 0.90;
     
 }
 main section{
@@ -23,6 +21,7 @@ main .allergies-section{
     background-color: rgba(255, 255, 255, 0.253);
 }
 
+
 main .allergies-section .card{
     border-radius: 10px;
     background-color:white;
@@ -34,18 +33,22 @@ main .allergies-section .card{
     box-shadow: 0px 0px 10px #eee;
 }
 
+main .allergies-section .card .contenu{
+    display: contents;
+}
+
+
+
 main .card img{
     width:100px;
 }
 
 main .allergies-section .card input{
     display: inline;
-    
+    margin-left: 50%;
+
 }
 
-main .allergies-section .card input:hover{
-    border: 1px solid green;
-}
 
 main .allergies-section .card label{
     display: inline;
@@ -75,6 +78,7 @@ main .card img{
 }
 main .preferences-section .card input{
     display: inline;
+    margin-left: 50%;
     
 }
 
@@ -87,7 +91,11 @@ p{
     background-color:white;
     width: 48%;
     height: 40px;
+    margin-top: 10px;
    
+}
+main .preferences-section .card .contenu{
+    display: contents;
 }
 
 @media screen and (max-width: 800px) {
@@ -99,12 +107,16 @@ p{
             }
 }
 
+
 @media screen and (max-width: 720px) {
     main .allergies-section .card{
     width: 100%;
     }
     main .preferences-section .card{
         width: 100%;
+        }
+        input{
+            margin-left: 50%;
         }
     
 }
