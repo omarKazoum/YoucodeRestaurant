@@ -1,0 +1,108 @@
+body{
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url("image_bg.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+main section{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+}
+main .allergies-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: white ;
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+main .allergies-section .card{
+    border-radius: 10px;
+    background-color:white;
+    align-items: center;
+    gap:5px;
+    display: inline-flex;
+    margin: 5px;;
+    width: 48%;
+    box-shadow: 0px 0px 10px #eee;
+}
+
+main .card img{
+    width:100px;
+}
+
+main .allergies-section .card input{
+    display: inline;
+    
+}
+
+main .allergies-section .card input:hover{
+    border: 1px solid green;
+}
+
+main .allergies-section .card label{
+    display: inline;
+
+}
+
+main .preferences-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: white ;
+    background-color: rgba(255, 255, 255, 0.253);
+
+}
+main .preferences-section .card{
+    border-radius: 5px;
+    background-color:white;
+    align-items: center;
+    gap:5px;
+    display: inline-flex;
+    margin: 5px;;
+    width: 48%;
+    box-shadow: 0px 0px 10px #eee;
+}
+main .card img{
+    width:100px;
+}
+main .preferences-section .card input{
+    display: inline;
+    
+}
+
+main .preferences-section .card label{
+    display: inline;
+
+}
+main p{
+    border-radius: 5px;
+    background-color:white;
+    display: inline-block;
+    padding: 5px;
+   
+}
+
+@media screen and (max-width: 800px) {
+    main .allergies-section .card{
+        width: 100%;
+        }
+        main .preferences-section .card{
+            width: 100%;
+            }
+}
+
+@media screen and (max-width: 720px) {
+    main .allergies-section .card{
+    width: 100%;
+    }
+    main .preferences-section .card{
+        width: 100%;
+        }
+    
+}
