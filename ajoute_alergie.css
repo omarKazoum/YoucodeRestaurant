@@ -1,0 +1,36 @@
+
+
+main{
+    height: 200px;
+    width: 95%;
+    margin: auto;
+}
+main input{
+    width: 93%;
+    padding: 10px; 
+    border: solid #43A047 1px;
+    border-radius: 20px;
+}
+main button{
+    width: 100%;
+    padding: 8px;
+    margin-top: 30px; 
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+@media all and (min-width:900px) {
+    main{
+        width: 30%;
+        position: relative;
+        top: 100px;
+    }
+}
+@media all and (min-width:500px) {
+    main{
+        width: 30%;
+        position: relative;
+        top: 100px;
+    }
+}
