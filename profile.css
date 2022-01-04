@@ -58,7 +58,7 @@ main .aricle_dessous{
     background: rgba(245, 196, 155, 0.87);
     background: linear-gradient(0deg, rgba(245, 196, 155, 0.473) 28%, rgba(245, 240, 235, 0.486) 100%);}
 
-@media only screen and (min-width:900px) {
+@media all and (min-width:900px) {
     main .contente{
         width: 40%;
     }  
@@ -71,7 +71,7 @@ main .aricle_dessous{
         margin: auto;
     } 
 }
-@media only screen and (min-width:600px) and (max-width:900px) {
+@media all and (min-width:600px) and (max-width:900px) {
     main .contente{
         width: 40%;
     }  
