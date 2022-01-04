@@ -43,13 +43,13 @@ h3{
     background-size: cover;
     color: white;
     box-shadow: 6px 9px 20px 20px;
-    border-radius: 5%;
+    border-radius: 11%;
 
 }
 .glace{
     background-color: rgba(44, 36, 36, 0.453);
     padding: 2%;
-    border-radius: 5%;
+    border-radius: 11%;
 }
 .cadre__row{
     display: flex;
@@ -59,6 +59,7 @@ h3{
 .cadre__row__title{
     font-size: 28px;
     margin-top: 2%;
+    MARGIN-BOTTOM: 0%;
 
 }
 .cadre p:nth-child(2n){
@@ -72,10 +73,12 @@ h3{
 }
 .ticket{
   
-    border-radius:7px;
-    margin-top: 19%;
+    border-radius: 7px;
+    margin-top: 20%;
+    
     border-radius: 7px;
     color: white;
+    BORDER: 1PX SOLID #707070;
     
 }
 a{
@@ -115,17 +118,19 @@ section{
 .plat-de-jour__save {
     background-color: var(--button-color);
     border-radius: 17px;
-    margin: 0% 46% 3% 0%;
+    margin:0% 39% 3% 0%;
     padding: 3%;
     color: white;
     font-size: 18px;
+    BORDER: 1PX SOLID #707070
    
 }
 
 input[type="text" ]{
     padding: 7%;
-    border-radius: 10px;
+    border-radius: 28px;
     MARGIN: 28PX 0PX 32PX 0PX;
+    BORDER: 1PX SOLID #707070a8;
 }
 
 
