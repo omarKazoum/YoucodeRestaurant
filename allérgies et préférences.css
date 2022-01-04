@@ -80,11 +80,19 @@ main .preferences-section .card label{
     display: inline;
 
 }
+<<<<<<< HEAD
 main p{
     border-radius: 5px;
     background-color:white;
     display: inline-block;
     padding: 5px;
+=======
+p{
+    border-radius: 5px;
+    background-color:white;
+    width: 48%;
+    height: 40px;
+>>>>>>> 988ba1bc5229afe1a6af8bb95941d3a159e8793d
    
 }
 
