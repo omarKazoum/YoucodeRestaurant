@@ -3,16 +3,16 @@ body{
     background-size: 100% 300vh;
     background-repeat: no-repeat;
 }
-.profile_client{
+main .profile_client{
     background-color: rgba(255, 255, 255, 0.904);
     height: 250vh;
 } 
-.contente{   
+main .contente{   
     height: 250vh; 
     width: 95%;   
     margin: auto;
 }
-.contente section{
+main .contente section{
     background-color: white;
     height: 90px;
     width: 103px;
@@ -20,23 +20,23 @@ body{
     border-radius: 50%;
     text-align: center;
 }
-.image_profile{
+main .image_profile{
     display: flex;
 }
-.buttons_profile button{
+main .buttons_profile button{
     margin: 4px;
     width: 80%;
     border: solid green;
     border-radius: 10px;
     padding: 10px;
 }  
-.input_client{ 
+main .input_client{ 
     padding: 10px;
      border-radius: 20px ;  
      border: solid green 1px;
      width: 90%;
 } 
-.button_dessous {
+main .button_dessous {
      color: white;
      background-color: green;
      padding: 15px;
@@ -46,23 +46,23 @@ body{
      border: solid green;
      border-radius: 10px;
 } 
-.aricle_dessous button{
+main .aricle_dessous button{
     position: relative;
     top: -45px;
 }
-.svg_icon{
+main .svg_icon{
     height: 13px;
 }
 
-.aricle_dessous{
+main .aricle_dessous{
     background: rgba(245, 196, 155, 0.87);
     background: linear-gradient(0deg, rgba(245, 196, 155, 0.473) 28%, rgba(245, 240, 235, 0.486) 100%);}
 
 @media only screen and (min-width:900px) {
-    .contente{
+    main .contente{
         width: 40%;
     }  
-    .image_profile{
+    main .image_profile{
     margin-left: 45px;
     margin-right: 45px;
     }
@@ -72,18 +72,18 @@ body{
     } 
 }
 @media only screen and (min-width:600px) and (max-width:900px) {
-    .contente{
+    main .contente{
         width: 40%;
     }  
-    .image_profile{
+    main .image_profile{
     margin-left: 9px;
     margin-right: 6px;
     }
-    .profile_client{
+    main .profile_client{
         width: 95%;
         margin: auto;
     } 
-    .contente section {
+    main .contente section {
         height: 88px;
        width: 136px;
     }     
