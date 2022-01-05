@@ -1,7 +1,7 @@
 body{
     
     box-sizing: border-box;
-    background-image: url("image_bg.jpg");
+    background-image: url("images/image_bg.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     opacity: 1;
@@ -24,10 +24,13 @@ main section{
     justify-content: center;
 }
 
-main .image-profile p{
+main .image-profile {
 align-items: center;
 justify-content: center;
+margin-right: 18%;
+
 }
+
 
 main section .bouttons button{
     margin: 4px;
@@ -37,9 +40,7 @@ main section .bouttons button{
     padding: 10px;
 }
 
-main section .image-profile{
-    display: flex;
-}
+
 main section .type-utilsateur select{
     height: 28px;
     margin-top: 5%;
@@ -62,14 +63,13 @@ main form .infos-users{
 
 main form .type-utilsateur{
     display: flex;
-    margin-left: 3%;
-
+    margin-left: 2%;
 }
 
 main .envoie-email{
     display: flex;
     justify-content: center;
-    margin-right: 11%;
+    margin-right: 12%;
 
 }
 main .envoie-email input{
@@ -103,13 +103,35 @@ main .contenu h1{
     margin-right: 140px;
 }
 
-main .image-profile {
-    margin-right: 18%;
-
-}
 
 @media screen and (max-width: 800px) {
-
+    main .contenu h1{
+        width: 80%;
+     }
+     main .image-profile{
+         width: 80%;
+     }
+     main .contenu p{
+     width: 100%;    }
+     
+ 
+     main section{
+     
+         width: 105%;
+     }
+ main form{
+     width: 60%;
+ }
+    
+     main .envoie-email{
+         width: 65%;
+     }
+ 
+     main .boutton-ajouter{
+         width: 60%;
+         margin: 80PX;
+ 
+     }
     
 
     
@@ -117,13 +139,12 @@ main .image-profile {
 
 
 @media screen and (max-width: 720px) {
-
-   
+ 
     main .contenu h1{
        width: 70%;
     }
     main .image-profile{
-        width: 80%;
+        width: 60%;
     }
     main .contenu p{
     width: 100%;    }
@@ -137,7 +158,15 @@ main form{
     width: 60%;
 }
    
-    
+    main .envoie-email{
+        width: 65%;
+    }
+
+    main .boutton-ajouter{
+        width: 60%;
+        margin: 80PX;
+
+    }
 
 }
 
