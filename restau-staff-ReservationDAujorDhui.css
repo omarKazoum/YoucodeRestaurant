@@ -21,29 +21,6 @@ main .top-row .btn{
     gap: 3px;
     border-radius: 5px;
 }
-/** for any giver dropdown**/
-.drop-down .drop-down-btn{
-    cursor:pointer;
-}
-.drop-down{
-    position: relative;
-}
-.drop-down .drop-down-content{
-    /*display: none;*/
-    position: absolute;
-    display:none;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0px 0px 4px #000A;
-    color: black;
-}
-.drop-down:hover .drop-down-content{
-    display: flex;
-}
-/* to add the glass effect*/
-
-/* for the main content*/
 .plats-section{
     color: white;
     display:flex;
