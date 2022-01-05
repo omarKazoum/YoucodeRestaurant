@@ -1,0 +1,141 @@
+
+/* forth to area*/
+main .top-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .top-row h1{
+    font-size: 20px;
+}
+.section-title{
+    font-size: 18px;
+    margin: 5px;
+}
+main .top-row .btn{
+    background-color: white;
+    border: 1px #00000066 solid;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    gap: 3px;
+    border-radius: 5px;
+}
+.plats-section{
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+.plat-card{
+    width: 49%;
+    display: inline-block;
+}
+.special-requests-row{
+    display: flex;
+    justify-content: flex-end;
+}
+.special-requests-row .special-requests-con{
+    font-size: 15px;
+    direction: rtl;
+    padding: 7px;
+    font-weight: 400;
+    background-color:#DC3238;
+    border-top-right-radius:5px ;
+    border-top-left-radius:5px ;
+}
+.special-requests-row .special-requests-con li{
+    list-style-type: none;
+    margin: 0px;
+}
+.special-requests-row .special-requests-con b{
+}
+.special-requests-row .special-requests-con ul{
+    margin: 0px;
+    padding: 5px;
+}
+.special-requests-row .special-requests-con .drop-down-content{
+    justify-content: space-evenly;
+    width: 300px;
+}
+.special-requests-row .special-requests-con .drop-down-content .column{
+    direction: ltr !important;
+
+}
+.special-requests-row .special-requests-con .drop-down-content .line{
+    border-right:  solid 1px #43A047;
+}
+.plat-card h1,.plat-card h2{
+    margin: 0px;
+}
+.plat-card .card-content-wrapper{
+    background-image: url("images/plat_banner1.jpg");
+    background-size: cover;
+    border-radius: 20px 0px 20px 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #43A04744;
+}
+.plat-card .card-content-wrapper .card__content{
+    padding: 10px;
+    background:linear-gradient(to bottom,#040404aa,#57575700);
+}
+.card__content__row-top{
+    display: flex;
+    justify-content: space-between;
+}
+.card__content__row-top .tickets{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.ticket{
+    border: 1px solid #0002;
+    border-radius: 5px;
+    padding: 2px;
+}
+.ticket--red{
+    background-color: #DC3238;
+}
+.ticket--green{
+    background-color: #43A047;
+}
+.card__content__row-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__content__row-middle .stars-con{
+    display: flex;
+    display: inline-block;
+}
+.star{
+    display: inline-block;
+    width: 35px;
+    height:35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.star--full{
+    background-image: url("images/star-full.svg");
+}
+.star--empty{
+    background-image: url("images/star-empty.svg");
+}
+.card__content__description{
+    font-size:14px;
+    margin:0px
+}
+.card__content__description a{
+    color:white;
+    display: block;
+}
+
+@media  all and (max-width:720px) {
+    .plat-card{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,90 @@
+body{
+    background-image: url(images/image_bg.jpg);
+    background-size: 100% 300vh;
+    background-repeat: no-repeat;
+} 
+main .profile_client{
+    background-color: rgba(255, 255, 255, 0.904);
+    height: 250vh;
+} 
+main .contente{   
+    height: 250vh; 
+    width: 95%;   
+    margin: auto;
+}
+main .contente section{
+    background-color: white;
+    height: 90px;
+    width: 103px;
+    border: solid green;
+    border-radius: 50%;
+    text-align: center;
+}
+main .image_profile{
+    display: flex;
+}
+main .buttons_profile button{
+    margin: 4px;
+    width: 80%;
+    border: solid green;
+    border-radius: 10px;
+    padding: 10px;
+}  
+main .input_client{ 
+    padding: 10px;
+     border-radius: 20px ;  
+     border: solid green 1px;
+     width: 90%;
+} 
+main .button_dessous {
+     color: white;
+     background-color: green;
+     padding: 15px;
+     margin: auto;
+     margin-top: 50px;
+     width: 100%;
+     border: solid green;
+     border-radius: 10px;
+} 
+main .aricle_dessous button{
+    position: relative;
+    top: -45px;
+}
+main .svg_icon{
+    height: 13px;
+}
+
+main .aricle_dessous{
+    background: rgba(245, 196, 155, 0.87);
+    background: linear-gradient(0deg, rgba(245, 196, 155, 0.473) 28%, rgba(245, 240, 235, 0.486) 100%);}
+
+@media all and (min-width:900px) {
+    main .contente{
+        width: 40%;
+    }  
+    main .image_profile{
+    margin-left: 45px;
+    margin-right: 45px;
+    }
+    .profile_client{
+        width: 95%;
+        margin: auto;
+    } 
+}
+@media all and (min-width:600px) and (max-width:900px) {
+    main .contente{
+        width: 40%;
+    }  
+    main .image_profile{
+    margin-left: 9px;
+    margin-right: 6px;
+    }
+    main .profile_client{
+        width: 95%;
+        margin: auto;
+    } 
+    main .contente section {
+        height: 88px;
+       width: 136px;
+    }     
+}

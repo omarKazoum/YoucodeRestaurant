@@ -1,11 +1,12 @@
 body{
-    
+        padding: 0px;
     box-sizing: border-box;
     background-image: url("image_bg.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     opacity: 0.90;
-    
+    background-position:center;
+    background-attachment: fixed;
 }
 main section{
     display: flex;
@@ -86,14 +87,14 @@ main .preferences-section .card label{
     display: inline;
 
 }
-p{
+main p{
     border-radius: 5px;
     background-color:white;
+    display: inline-block;
+    padding: 5px;
     width: 48%;
     height: 40px;
-    margin-top: 10px;
-    
-   
+    margin-top: 10px;  
 }
 main .preferences-section .card .contenu{
     display: contents;
