@@ -30,6 +30,13 @@ body{
 .drop-down:hover .drop-down-content{
     display: flex;
 }
-/* to add the glass effect*/
 
-/* for the main content*/
+
+/*for mobile*/
+
+@media all and (max-width: 720px){
+    body{
+        background-image: url('images/image_bg_mobile.jpg');
+    }
+
+}

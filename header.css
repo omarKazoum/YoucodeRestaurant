@@ -1,67 +1,62 @@
+/*generl*/
 header{
-    height: 70px; 
-    padding-left: 15%;
-    padding-right: 10%;
-} 
-header img {
-    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-header nav li {
+header *{
+    box-sizing: border-box;
+}
+header li{
+    list-style-type: none;
+}
+header ul{
+    margin: 0px;
+    padding: 0px;
+}
+header a{
     display: inline-block;
-    width: 20%;  
-}
-header nav li a{
-  text-decoration: none;
-}
-header nav{
-    position: relative;
-     left: 10%;
-     top: -80%;
-}
-header nav li a:hover{
-    color: #6BAB6E;
-    text-decoration: underline #6BAB6E;
-}
-.dropdown{
-    display: none;
-}
-@media all and (max-width:756px) {
-    nav{
-        display: none;
-    }
-.dropbtn {
-   color: black;
-   cursor: pointer;
-   position: relative;
-   top: 10px;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    left: 70%;
-    top: -45%;
-    width: 10%;
-    direction: rtl;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    color: black; 
-    padding: 12px 16px;
+    padding: 5px;
+    color: black;
     text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
+}
+header a:hover{
+    background-color: green;
+    color: white;
+}
+header #logo{
+    width: 60px;
+    height: 60px;
+}
+header .mobile-drop-down__btn{
+    width: 40px;
+    height: 40px;
+}
+header .mobile-drop-down a{
+    width: 100%;
+    cursor: pointer;
+}
+header .mobile-drop-down{
+    direction: rtl;
+    position: relative;
+}
+header .mobile-drop-down .profile-dropdown__btn{
+    width: 30px;
+
+}
+header .mobile-drop-down .mobile-drop-down__content{
+    text-align: left;
+    box-shadow: 0px 0px 5px rgba(0, 128, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+header .mobile-drop-down .profile-dropdown{
+    border-top: 1px solid #eeee;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+@media all and (min-width:720px){
+
+
 }
