@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modification-utilisateur</title>
+  <link rel="stylesheet" href="Ajoute d'un utilisateur.css">
+</head>
+
+<body>
+   <header>
+   </header>
+   <main>
+       <div class="modifier-utilisateur">
+        
+        <div class="contenu">
+            <h1>Modification d'un utilisateur</h1>
+            <p>Remplir le formulaire ci-dessus avec les infos de l'utilsateur à ajouter </p>
+            <div class="image-profile">
+                <p>Image de profile</p>
+                </div>
+           </div>
+           
+           <section class="profilesection">  
+            <div class="bouttons">
+                <button> Changer <img src="images/exchange.png"alt=""> </button>
+                <button> Supprimer <img src="images/delete.png" alt=""> </button>
+           </div> 
+            <div class="photo-profile">
+           <img src="images/user.png">
+            </div>  
+           </section>
+       </div>
+       
+       <form>
+       <div class="infos-users">       
+            <label for="fname">Nom</label>
+            <input type="text" id="fname" name="fname" placeholder="Ex:elidlissi">
+
+            <label for="lname">Prénom</label>
+            <input type="text" id="lname" name="lname" placeholder="Ex:Youssef">
+      
+            <label for="mal">Email</label>
+          <input type="email" id="fname" name="mail" placeholder="Ex:example@domain.com">
+              
+      
+          <label for="date">Date de naissance</label>
+          <input type="date" id="date" name="birthdate">
+              
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" placeholder="Laisser vide pour générer un mot de passe">
+         </div>    
+      
+         <section class="confrmer">
+            <div class="type-utilsateur" >
+                <p>Type d'utilsateur:</p>
+                <select>
+                <option value="0">client(par defaut:)</option>
+                <option value="0">Administrateur</option>
+                <option value="0">Staff restaurant</option>
+                </select>
+                </div>
+  
+         </section>
+        </form> 
+
+        <div class="envoie-email">
+            <p>Envoyer l'email des changements:</p>
+            <input type="checkbox">
+            </div>
+
+         <button class="boutton-ajouter">Enregistrer</button>
+
+   </main>
+   </body>
