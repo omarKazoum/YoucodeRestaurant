@@ -29,7 +29,7 @@ margin-right: 18%;
 main section .bouttons button{
     margin: 4px;
     width: 80%;
-    border: solid green;
+    border: solid #43A047 1px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -43,13 +43,20 @@ main section .type-utilsateur select{
 
 
 }
-
-main section .photo-profile img {
-    border: 1px solid;
+main section .photo-profile {
+    --size:90px;
+    width:var(--size) ;
+    height:var(--size);
+    border: 1px solid #0002;
     border-radius: 50%;
-    color: #43A047;
-    background-color: white;
-    width: 80PX;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+main section .photo-profile img {
+    width:60%;
+    height:60%;
 }
 
 main form .infos-users{
