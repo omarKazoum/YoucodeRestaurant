@@ -26,19 +26,22 @@ body{
 
 .user{
     display: flex;
-    justify-content: space-between; 
+  
+    justify-content: space-between;
+
 
 }
 
 .user__operation__search{
     DISPLAY: FLEX;
     JUSTIFY-CONTENT: SPACE-BETWEEN;
-    padding: 0% 1% ;
+    padding: 0% 1%;
     border-radius: 28px;
-  
     BORDER: 1PX SOLID var(--button-color);
     BACKGROUND-COLOR: WHITE;
-    width: 16%;
+    width: 29%;
+    position: RELATIVE;
+
   
 }
 .user__operation__add{
@@ -52,17 +55,24 @@ body{
 }
 .user__operation__add input{
        BORDER:none;
+       border-radius: 25PX;
+       outline: none;
     
 }
 .user__operation__search input{
    
-    MARGIN: 0PX ;
-    border:none;
+    MARGIN: 0PX;
+    border: none;
     BACKGROUND-COLOR: WHITE;
+    border-radius: 25PX;
+    WIDTH: 100%;
+    outline: none;
 }
 .user__operation__search img{
+    POSITION: relative;
     border-left: 1px solid var(--button-color);
     padding: 3%;
+
 }
 
 .user__compte{
@@ -98,7 +108,48 @@ font-size: 22px;
 H1{
     position: staticS;
 }
+summary{
+    margin: 1% 47%;
+    PADDING: 1%;
+    BACKGROUND-COLOR: WHITE;
+    border-radius: 11PX;
+    border: 1px solid #707070;
+  
+    
+}
+.filter_user{
+    
+    
+    PADDING: 1%;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
 
+}
+.imageface {
+    border-radius: 50%;
+    BOX-SIZING: border-box;
+    PADDING: 1%;
+    width: 134px;
+}
+
+
+@media (min-width: 761px)   and (max-width: 1000px) { 
+    .user__operation__add input{
+        display: none;  
+          
+ }
+ .user__operation__search {
+
+    width: 30%;
+    right: -1%;
+ }
+ .filter_user {
+  
+    WIDTH: 56%;
+}
+  
+}
 
 
 
@@ -106,6 +157,12 @@ H1{
     body{
         margin: 2%;
        
+    }
+    summary{
+        margin: 1% 40%;
+    
+      
+        
     }
     section{
         display: flex;
@@ -135,6 +192,7 @@ H1{
    color: green;
     right: 0px; 
 }
+
 .user__operation__add{
   
     padding: 2% 4%;
@@ -142,6 +200,12 @@ H1{
 }
    h1{
     POSITION: ABSOLUTE;
+    font-size: 18px;
+
    }
+   .filter_user{
+    
+    WIDTH: 100%;
+}
 }
 
