@@ -8,10 +8,6 @@ body{
     
 }
 
-main .ajouter-utilisateur{
-    margin: auto;
-}
-
 main .contenu{ 
     display: flex;
     flex-direction:column;
@@ -28,9 +24,7 @@ main .image-profile {
 align-items: center;
 justify-content: center;
 margin-right: 18%;
-
 }
-
 
 main section .bouttons button{
     margin: 4px;
@@ -40,10 +34,13 @@ main section .bouttons button{
     padding: 10px;
 }
 
-
 main section .type-utilsateur select{
     height: 28px;
     margin-top: 5%;
+    margin-left: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+
 
 }
 
@@ -63,19 +60,19 @@ main form .infos-users{
 
 main form .type-utilsateur{
     display: flex;
-    margin-left: 2%;
+    margin-left: 4%;
 }
 
 main .envoie-email{
     display: flex;
     justify-content: center;
-    margin-right: 12%;
-
+    margin-right: 11%;
 }
+
 main .envoie-email input{
     margin: 18px 10px 10px 10px;
-
 }
+
 main .boutton-ajouter {
     color: white;
      background-color: green;
@@ -99,10 +96,10 @@ main form{
     padding: 25px 250px 0px 0px;
 }
 
-main .contenu h1{
-    margin-right: 140px;
-}
 
+main .contenu h1{
+justify-content: center;
+align-items: center;}
 
 @media screen and (max-width: 800px) {
     main .contenu h1{
@@ -112,17 +109,17 @@ main .contenu h1{
          width: 80%;
      }
      main .contenu p{
-     width: 100%;    }
+     width: 100%;    
+    }
      
- 
      main section{
-     
          width: 105%;
      }
+
  main form{
      width: 60%;
  }
-    
+
      main .envoie-email{
          width: 65%;
      }
@@ -130,13 +127,8 @@ main .contenu h1{
      main .boutton-ajouter{
          width: 60%;
          margin: 80PX;
- 
-     }
-    
-
-    
+     }    
 }
-
 
 @media screen and (max-width: 720px) {
  
@@ -147,17 +139,17 @@ main .contenu h1{
         width: 60%;
     }
     main .contenu p{
-    width: 100%;    }
-    
+    width: 100%;
+    }
 
     main section{
-    
         width: 105%;
     }
+
 main form{
     width: 60%;
 }
-   
+
     main .envoie-email{
         width: 65%;
     }
