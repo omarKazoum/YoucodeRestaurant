@@ -9,7 +9,6 @@
 
 body{
 
-    padding: 0%;
     box-sizing: border-box;
     background-image: var(--bgimag);
     background-repeat: no-repeat;
@@ -30,15 +29,7 @@ body{
     justify-content: space-between; 
 
 }
-.filter_user{
 
-  
- 
-}
-.user__operation{
-  
-    
-}
 .user__operation__search{
     DISPLAY: FLEX;
     JUSTIFY-CONTENT: SPACE-BETWEEN;
@@ -49,6 +40,19 @@ body{
     BACKGROUND-COLOR: WHITE;
     width: 16%;
   
+}
+.user__operation__add{
+    DISPLAY: FLEX;
+    JUSTIFY-CONTENT: SPACE-BETWEEN;
+    padding: 0% 1% ;
+    border-radius: 28px;
+  
+    BORDER: 1PX SOLID #707070;
+    BACKGROUND-COLOR: WHITE;
+}
+.user__operation__add input{
+       BORDER:none;
+    
 }
 .user__operation__search input{
    
@@ -65,7 +69,7 @@ body{
     background-color: white;
     display: flex;
     JUSTIFY-CONTENT: space-evenly;
-    PADDING: 1% 12% 1% 0%;
+  
     WIDTH: 100%;
     border-radius: 18px;
     border: 1px #707070 solid;
@@ -86,12 +90,19 @@ font-size: 22px;
     MARGIN: 0% -7% 23% 0%;
 
 }
+.user_compte__menu button{
+    background: white;
+    border: none;
+    margin-top: 52%;
+}
+H1{
+    position: staticS;
+}
 
 
 
 
-
-@media (max-width: 720px) {
+@media (max-width: 760px) {
     body{
         margin: 2%;
        
@@ -108,6 +119,29 @@ font-size: 22px;
     
     
     }
-   
+    .user{
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+   .user__operation__search {
+    width: 98%;
+    MARGIN: 9% 0% 6% 0%;
+    }
+    .user__operation__add input{
+        display: none;  
+          
+ }
+.user__operation__add img{
+   color: green;
+    right: 0px; 
+}
+.user__operation__add{
+  
+    padding: 2% 4%;
+    margin: 1% 1% 1% 83%;
+}
+   h1{
+    POSITION: ABSOLUTE;
+   }
 }
 

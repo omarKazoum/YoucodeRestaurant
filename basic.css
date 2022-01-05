@@ -14,8 +14,12 @@ body{
 .drop-down .drop-down-btn{
     cursor:pointer;
 }
+
 .drop-down{
     position: relative;
+}
+.user__compte ul{
+    list-style: none;
 }
 .drop-down .drop-down-content{
     /*display: none;*/
