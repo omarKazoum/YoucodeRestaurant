@@ -13,13 +13,19 @@ body{
 /** for any giver dropdown**/
 .drop-down .drop-down-btn{
     cursor:pointer;
+    border: NONE;
+    background-color: white;
 }
+
+
 
 .drop-down{
     position: relative;
 }
 .user__compte ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 .drop-down .drop-down-content{
     /*display: none;*/
