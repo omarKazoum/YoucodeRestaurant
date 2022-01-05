@@ -1,0 +1,143 @@
+body{
+    
+    box-sizing: border-box;
+    background-image: url("image_bg.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    opacity: 1;
+    
+}
+
+main .ajouter-utilisateur{
+    margin: auto;
+}
+
+main .contenu{ 
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+   
+main section{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+main .image-profile p{
+align-items: center;
+justify-content: center;
+}
+
+main section .bouttons button{
+    margin: 4px;
+    width: 80%;
+    border: solid green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main section .image-profile{
+    display: flex;
+}
+main section .type-utilsateur select{
+    height: 28px;
+    margin-top: 5%;
+
+}
+
+main section .photo-profile img {
+    border: 1px solid;
+    border-radius: 50%;
+    color: #43A047;
+    background-color: white;
+    width: 80PX;
+}
+
+main form .infos-users{
+    display: grid;
+    justify-content: center;
+    margin: 30px;
+}
+
+main form .type-utilsateur{
+    display: flex;
+    margin-left: 3%;
+
+}
+
+main .envoie-email{
+    display: flex;
+    justify-content: center;
+    margin-right: 11%;
+
+}
+main .envoie-email input{
+    margin: 18px 10px 10px 10px;
+
+}
+main .boutton-ajouter {
+    color: white;
+     background-color: green;
+     justify-content: center;
+     width: 20%;
+     border: solid green;
+     border-radius: 10px;
+     padding: 15px;
+     margin-top: 50px;
+     margin-left: 38%;
+}
+
+main form .infos-users input{
+    padding: 10px;
+    border-radius: 20px ;  
+    border: solid green 1px;
+    width: 170%;
+}
+
+main form{
+    padding: 25px 250px 0px 0px;
+}
+
+main .contenu h1{
+    margin-right: 140px;
+}
+
+main .image-profile {
+    margin-right: 18%;
+
+}
+
+@media screen and (max-width: 800px) {
+
+    
+
+    
+}
+
+
+@media screen and (max-width: 720px) {
+
+   
+    main .contenu h1{
+       width: 70%;
+    }
+    main .image-profile{
+        width: 80%;
+    }
+    main .contenu p{
+    width: 100%;    }
+    
+
+    main section{
+    
+        width: 105%;
+    }
+main form{
+    width: 60%;
+}
+   
+    
+
+}
+
