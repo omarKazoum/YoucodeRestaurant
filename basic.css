@@ -8,7 +8,19 @@ body{
     background-image: url("images/image_bg.jpg");
     padding: 15px;
 }
-
+/* to create tickets more easily*/
+.ticket{
+    border: 1px solid #0002;
+    border-radius: 5px;
+    padding: 2px;
+}
+.ticket--red{
+    background-color: #DC3238;
+}
+.ticket--green{
+    background-color: #43A047;
+}
+/** to create stars more easily*/
 .star{
     display: inline-block;
     width: 35px;
