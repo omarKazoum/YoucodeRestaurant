@@ -1,0 +1,89 @@
+.top-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.jours-wrapper li{
+    list-style-type: none;
+}
+.mobile-jours-con{
+    direction: rtl;
+    flex: 1;
+}
+.mobile-jours-con .drop-down-btn{
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    border:solid #eeee 2px;
+    direction: ltr;
+}
+.mobile-jours-con .drop-down-btn img{
+    width:30px;
+    height: 30px;
+}
+.mobile-jours-con li{
+    display: block;
+}
+.mobile-jours-con.drop-down,.mobile-jours-con.drop-down:hover{
+    display: block;
+}
+.mobile-jours-con.drop-down .drop-down-content{
+    margin: 0px;
+    top: 2.8em;
+    text-align: left;
+    display: none;
+}
+.mobile-jours-con.drop-down:hover .drop-down-content{
+    display: block;
+}
+.mobile-jours-con.drop-down .drop-down-content li:hover{
+    background-color: #66A9BE;
+    cursor:pointer
+}
+/*for desktop day selction*/
+.desktop-jours-con{
+    display: none;
+    box-shadow: 0px 0px 31px 3px #00000033;
+}
+
+@media all and (min-width: 720px) {
+    .top-row{
+    }
+    .mobile-jours-con.drop-down{
+        display: none;
+    }
+    .top-row > *:nth-child(1){
+        flex:2;
+    }
+    .top-row > *:nth-child(2){
+        flex:4;
+    }
+    .desktop-jours-con{
+        display: flex;
+        background-color: #F8F8F8;
+        backdrop-filter: brightness(15) opacity(16);
+        border-radius: 21px;
+        margin:0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .desktop-jours-con .jour{
+        text-align: center;
+        display: inline-block;
+        padding: 15px 15px;
+        flex: 1;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .desktop-jours-con .jour:hover{
+        background-color:#6BAB6E;
+    }
+    .desktop-jours-con .jour.active{
+        background-color: #66A9BE;
+        color: white;
+    }
+}
