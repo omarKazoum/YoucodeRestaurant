@@ -7,13 +7,13 @@ body{
     font-family: 'Poppins', sans-serif;
     background-image: url("images/image_bg.jpg");
     padding: 15px;
-}
+} 
 .glass{
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: opacity(0%);
     backdrop-filter: blur(2);
     border-radius: 5px;
-}
+}  
 /** for any giver dropdown**/
 .drop-down .drop-down-btn{
     cursor:pointer;
@@ -41,4 +41,18 @@ body{
         background-image: url('images/image_bg_mobile.jpg');
     }
 
+}
+/** for teh stars**/
+.star{
+    display: inline-block;
+    width: 35px;
+    height:35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.star--full{
+    background-image: url("images/star-full.svg");
+}
+.star--empty{
+    background-image: url("images/star-empty.svg");
 }

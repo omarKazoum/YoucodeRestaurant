@@ -1,0 +1,123 @@
+body{
+  box-sizing: border-box;
+}
+main{ 
+  height: 100%;
+  margin: auto;
+  width: 90%;
+}
+
+
+
+.piechart1 {
+--chart: 50%;
+--hole: 50%;
+background-color: rgb(255, 255, 255);
+background:
+      radial-gradient(
+          circle closest-side,
+          rgb(255, 255, 255) 0,
+          rgb(255, 255, 255) var(--hole),
+          transparent 10%  
+      ),
+      conic-gradient(
+          #43A047 0%, 
+          #43A047 var(--chart),
+          transparent 0%,
+          transparent 10% 
+  );
+width: 60px;
+height: 60px;
+border-radius: 50%;
+position: relative;
+left: -10%;
+}
+.contente{
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+.dach p{
+position: relative;
+left: 82px;
+top: -42px;
+}
+.dach{
+  width: 355px;
+}
+.persone{background-color: #ffffff;position: relative;left: 9PX;TOP: 15PX;border-radius: 100%;height: 60PX;width: 60PX;border-radius: 50%;}
+.persone img{
+height: 43PX;
+left: 8px;
+position: relative;
+top: 4px;
+}
+
+
+/* ***************************************************************** */
+.parent{
+  position: relative;
+  top: 40%;
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-evenly;  
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+} 
+.partie{
+  width: 200px; 
+}
+.nom_persone{
+  margin: 10px;
+  width: 190px;
+}
+#progressbar>div {  
+  background-color: #FDD835;
+  width:  80%; 
+  height: 12px;
+  border-radius: 10px;
+}
+.porsontage{
+  transform:translate(16px, 20px);
+    position: absolute;
+   font-size: 14px;
+}
+.description_dashbord{
+  background-color: white;
+  border: solid green 1px;
+  border-radius: 7px;
+  height: 69px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 15px;
+} 
+#progressbar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 13px;
+  border: solid blacK;
+  margin: 10px;  
+  width: 90%;
+  height: 12px;
+}
+/* @media all and (min-width:900px) and (max-width:1240px){
+  .contente{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: #e60a0a;
+    border-radius: 5px;
+    justify-content: space-between;
+  } 
+} */
+.datesvg{
+  display: flex;
+  justify-content: space-between;
+}
+.datesvg img{
+  width: 100px;
+  height: 80px;
+}
