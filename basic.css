@@ -14,15 +14,32 @@ body{
     backdrop-filter: blur(2);
     border-radius: 5px;
 }
-/** for any giver dropdown**/
+
 .drop-down .drop-down-btn{
     cursor:pointer;
+    border: NONE;
+    background-color: white;
+    margin-top: 24%;
+  
+
 }
+
+
+
 .drop-down{
     position: relative;
 }
+.user__compte ul{
+    list-style: none;
+    flex-direction: column;
+    WIDTH: 203PX;
+    cursor: pointer;
+}
+.user__compte ul li:hover{
+  color: #6bab6ec4;
+}
 .drop-down .drop-down-content{
-    /*display: none;*/
+  
     position: absolute;
     display:none;
     background-color: white;
