@@ -1,5 +1,5 @@
 body{
-    padding: 0px;
+padding: 0px;
 box-sizing: border-box;
 background-image: url("images/image_bg.jpg");
 background-repeat: no-repeat; 
@@ -20,6 +20,7 @@ flex-wrap: wrap;
 align-items: center;
 border: white ;
 background-color: rgba(255, 255, 255, 0.253);
+box-sizing: border-box;
 }
 
 main .allergies-section .card{
@@ -46,11 +47,17 @@ justify-content:flex-start;
 font-size:20px;
 }
 
-
-
-main .card img{
-width:100px;
+main .allergies-section .modify-delet{
+    display: flex;
 }
+main .allergies-section .modify-delet img{
+    width: 25px;
+
+}
+main .preferences-section .modify-delet{
+    display: flex;
+}
+
 
 main .allergies-section .card label{
 display: inline;
@@ -69,6 +76,7 @@ main .preferences-section{
     align-items: center;
     border: white ;
     background-color: rgba(255, 255, 255, 0.253);
+    box-sizing: border-box;
     
 }
 main .preferences-section .card{
@@ -84,8 +92,14 @@ main .preferences-section .card{
     padding: 10px;
     box-sizing: border-box;
 }
+
 main .card img{
 width:100px;
+}
+
+main .preferences-section .modify-delet img{
+    width: 25px;
+
 }
 
 main .preferences-section .card label{
@@ -122,15 +136,56 @@ main .allergies-section .card{
 
 
 @media screen and (max-width: 720px) {
+
 main .allergies-section .card{
 width: 100%;
-}
-main .preferences-section .card{
-    width: 100%;
-    }
-   main input{
-        margin-left: 10%;
-        
-    }
+margin: 4px;
 
 }
+
+main .preferences-section .card{
+    width: 100%;
+    margin: 4px;
+
+    }
+ 
+main .allergies-section .modify-delet {
+    flex-direction: column;
+    width: 25px;
+    margin: 4PX;
+    }
+ 
+main .preferences-section .modify-delet{
+    flex-direction: column;
+    width: 25px;
+    margin: 4PX;
+    }
+    
+    main .allergies-section .modify-delet img:nth-child(1)
+    {
+        --portion:80;
+       width: calc(40px*var(--portion)/100);
+       height: calc(40px*var(--portion)/100);
+       MARGIN: 21%;
+   }
+   /**pour l'icon de supprimer section allergies*/
+   main .allergies-section .modify-delet img:nth-child(2) {
+       --portion:90;
+       width: calc(28px*var(--portion)/100);
+       height:  calc(36px*var(--portion)/100);
+       MARGIN: 21%;
+   }
+    /**pour l'icon de modifier section preferences*/
+   main .preferences-section .modify-delet img:nth-child(1) {
+      --portion:80;
+       width: calc(40px*var(--portion)/100);
+       height: calc(40px*var(--portion)/100);
+       MARGIN: 21%;
+   }
+    /**pour l'icon de supprimer section preferences*/
+   main .preferences-section .modify-delet img:nth-child(2) {
+      --portion:90;
+       width: calc(28px*var(--portion)/100);
+       height:  calc(36px*var(--portion)/100);
+       MARGIN: 21%;
+   }}

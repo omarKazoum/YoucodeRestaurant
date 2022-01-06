@@ -8,26 +8,48 @@ body{
     background-image: url("images/image_bg.jpg");
     padding: 15px;
 }
+/* to create tickets more easily*/
+.ticket{
+    border: 1px solid #0002;
+    border-radius: 5px;
+    padding: 2px;
+}
+.ticket--red{
+    background-color: #DC3238;
+}
+.ticket--green{
+    background-color: #43A047;
+}
+/** to create stars more easily*/
+.star{
+    display: inline-block;
+    width: 35px;
+    height:35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.star--full{
+    background-image: url("images/star-full.svg");
+}
+.star--empty{
+    background-image: url("images/star-empty.svg");
+}
 .glass{
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: opacity(0%);
     backdrop-filter: blur(2);
     border-radius: 5px;
 }
-
 .drop-down .drop-down-btn{
     cursor:pointer;
-    border: NONE;
     background-color: white;
-    margin-top: 24%;
-  
-
 }
-
-
-
 .drop-down{
     position: relative;
+}
+.user__compte .drop-down .drop-down-btn{
+    margin-top: 24%;
+    border: NONE;
 }
 .user__compte ul{
     list-style: none;
@@ -39,7 +61,6 @@ body{
   color: #6bab6ec4;
 }
 .drop-down .drop-down-content{
-  
     position: absolute;
     display:none;
     background-color: white;
@@ -57,5 +78,4 @@ body{
     body{
         background-image: url('images/image_bg_mobile.jpg');
     }
-
 }
