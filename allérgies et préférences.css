@@ -33,6 +33,7 @@ width: 48%;
 box-shadow: 0px 0px 10px #eee;
 justify-content: space-between;
 padding: 10px;
+box-sizing: border-box;
 }
 
 main .allergies-section .card .contenu{
@@ -81,6 +82,7 @@ main .preferences-section .card{
     box-shadow: 0px 0px 10px #eee;
     justify-content: space-between;
     padding: 10px;
+    box-sizing: border-box;
 }
 main .card img{
 width:100px;
