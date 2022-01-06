@@ -22,7 +22,21 @@ body{
    
    
 }
+.drop-down .drop-down-btn{
+  
+    border: NONE;
+    background-color: white;
+    margin-top: 24%;
+  
 
+}
+
+.user__compte ul{
+    list-style: none;
+    flex-direction: column;
+    WIDTH: 203PX;
+    cursor: pointer;
+}
 
 .user{
     display: flex;
