@@ -111,7 +111,17 @@
     bottom: -5px;
     right: -10px;
 }
-
+/**for the button**/
+main .choix-de-plat.top-row .btn{
+    background-color: white;
+    border: 1px #00000066 solid;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    gap: 3px;
+    border-radius: 5px;
+    flex: unset;
+}
 @media all and (min-width: 720px) {
     /* for the top row with for sellecting the a day*/
     .top-row{
