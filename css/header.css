@@ -115,20 +115,21 @@ header .mobile-drop-down .profile-dropdown{
 
     }
     .profile-dropdown__content{
+        z-index: 2;
         position: absolute;
         width: 150px;
         top: 2em;
-        display: block;
+        display: none;
         background-color: white;
         border-radius: 5px;
         padding: 10px;
         box-shadow: 0px 0px 4px #000A;
         color: black;
     }
+    .profile-dropdown:hover .profile-drop-down__content{
+        display: block;
+    }
     header nav{
         flex: 1;
     }
-
-
-
 }
