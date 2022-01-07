@@ -1,0 +1,14 @@
+.galss__content{
+    display: flex;
+    flex-direction: column;
+
+}
+.galss__content__img{
+    width: 100%;
+    border-radius: 18px;
+   
+}
+.galss__content p{
+    text-align: justify;
+    
+}
