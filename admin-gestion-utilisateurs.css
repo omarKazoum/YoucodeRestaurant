@@ -120,7 +120,7 @@ font-size: 22px;
     margin-top: 52%;
 }
 H1{
-    position: staticS;
+    position: static;
 }
 summary{
     margin: 1% 47%;
