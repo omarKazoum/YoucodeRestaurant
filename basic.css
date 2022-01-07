@@ -45,7 +45,6 @@ body{
 }
 .drop-down .drop-down-btn{
     cursor:pointer;
-    background-color: white;
 }
 .drop-down{
     position: relative;
@@ -116,6 +115,8 @@ body{
     padding:6px 5px 2px 2px;
     background-image: url("images/shop-ic.svg");
 }
+
+
 /*for mobile*/
 
 @media all and (max-width: 720px){
