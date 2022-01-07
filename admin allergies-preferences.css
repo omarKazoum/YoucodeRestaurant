@@ -13,7 +13,17 @@ display: flex;
 flex-direction:row;
 justify-content: space-between;   
 }
+main .description{
+    display: flex;
+    justify-content: space-between;
+}
+main .description .ajouter {
 
+display: flex;
+    height: 45px;
+    border: solid 1px #6BAB6E;
+    border-radius: 9px;
+}
 main .allergies-section{
 display: flex;
 flex-wrap: wrap;
@@ -107,8 +117,7 @@ display: inline;
 
 }
 main p{
-border-radius: 5px;
-background-color:white;
+
 display: inline-block;
 padding: 5px;
 width: 48%;
