@@ -1,3 +1,4 @@
+/* for the top row with for sellecting the a day*/
 .top-row{
     display: flex;
     align-items: center;
@@ -16,6 +17,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 20px;
     border-radius: 5px;
     border:solid #eeee 2px;
     direction: ltr;
@@ -48,8 +50,70 @@
     display: none;
     box-shadow: 0px 0px 31px 3px #00000033;
 }
+/*end of for the top row with for sellecting the a day*/
+
+/* for the plats section*/
+.plat-section{
+    margin-top: 35px;
+}
+.plats-section__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+.plat-item{
+    position: relative;
+    color: white;
+    width: 100%;
+}
+.plat-item__content-for-image-wrapper{
+    background-image:url("images/sandwitch_1.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.plat-item .plat-item__top-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.plat-item .ticket+.ticket{
+    margin-left:5px;
+}
+.plat-item__content-wrapper{
+    overflow: hidden;
+    padding: 15px;
+    background:linear-gradient(to bottom,#040404aa,#57575700);
+}
+.plat-item .plat-item__description{
+    font-size: 15px;
+}
+.plat-item a{
+    color:white;
+    cursor: pointer;
+    display: block;
+}
+.plat-item .btn-circle{
+    position: absolute;
+    z-index: 2;
+}
+.btn-circle--edit{
+    top:-5px;
+    right: -10px;
+}
+.btn-circle--delete{
+    bottom:-5px;
+    right: -10px;
+}
+.btn-circle--shop{
+    bottom: -5px;
+    right: -10px;
+}
 
 @media all and (min-width: 720px) {
+    /* for the top row with for sellecting the a day*/
     .top-row{
     }
     .mobile-jours-con.drop-down{
@@ -85,5 +149,17 @@
     .desktop-jours-con .jour.active{
         background-color: #66A9BE;
         color: white;
+    }
+
+}
+@media all and (min-width: 810px) {
+    /* end of for the top row with for sellecting the a day*/
+    .plat-item{
+        width: 49%;
+    }
+}
+@media all and (min-width: 1080px) {
+    .plat-item{
+        width: 30%;
     }
 }
