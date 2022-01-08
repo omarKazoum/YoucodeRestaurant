@@ -108,7 +108,9 @@ main .top-row .btn{
     color:white;
     display: block;
 }
-
+main .drop-down-btn{
+    background-color: unset !important;
+}
 @media  all and (max-width:720px) {
     .plat-card{
         width: 100%;

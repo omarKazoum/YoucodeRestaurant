@@ -3,6 +3,11 @@ header a.active{
     color:var(--color-green);
     border-bottom: 2px var(--color-green) solid;
 }
+header a.active:hover{
+
+    color:var(--color-green);
+    background-color: inherit;
+}
 header{
     display:flex;
     justify-content: space-between;
@@ -91,8 +96,9 @@ header .mobile-drop-down .profile-dropdown{
         flex: 1;
     }
     header .mobile-drop-down .profile-dropdown__btn{
+        box-sizing: content-box;
         width: 30px;
-
+        padding: 10px;
     }
     header .mobile-drop-down .mobile-drop-down__content,header .mobile-drop-down:hover .mobile-drop-down__content{
         text-align: center;
@@ -105,8 +111,8 @@ header .mobile-drop-down .profile-dropdown{
     header .mobile-drop-down .profile-dropdown{
         display: inline-flex;
         border-top: 0px solid #eeee;
-        margin-top: 5px;
-        padding-top: 5px;
+        /*! margin-top: 5px; */
+        /*! padding-top: 5px; */
         direction: rtl;
     }
 
@@ -115,20 +121,23 @@ header .mobile-drop-down .profile-dropdown{
 
     }
     .profile-dropdown__content{
+        z-index: 2;
         position: absolute;
         width: 150px;
         top: 2em;
-        display: block;
+        display: none;
         background-color: white;
         border-radius: 5px;
         padding: 10px;
         box-shadow: 0px 0px 4px #000A;
         color: black;
     }
+    .profile-dropdown:hover .profile-dropdown__content{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+    }
     header nav{
         flex: 1;
     }
-
-
-
 }

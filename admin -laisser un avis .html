@@ -3,217 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin -laisser un avis </title>
-    <link rel="stylesheet" href="client_avis.css">
+    <title>admin - laisser un avis </title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="css/client_avis.css">
 </head>
 <body>
     <header>
 
     </header>
-
-
     <main  >
-        <h1>
-            Laisser un avis
-        </h1>
-        <h2>
-            Plat de lundi 23 decembre
-        </h2>
-        <section>
-            
-          
-
-
-            <div class="plat-de-jour">
-                <h3>
-                    Plat d'entree
-                </h3>
-                <div class="cadre  ">
-                    <div class="glace">
-                        <div class="cadre__row">
-                            <h4 class="cadre__row__title">Titre de plat</h4>
-                            <div class="cadre__row__tickets">
-                                <button class="ticket ticket--red">Tickat</button>
-                                <button class="ticket ticket--green">Tickat</button>
-                                
+        <section class="row-top">
+            <h1>Laisser un avis</h1>
+            <span class="drop-down">
+                <span class="drop-down-btn btn-with-image">
+                    Cette semaine <img src="images/pick-a-date.svg" alt="">
+                </span>
+                 <ul class="drop-down-content">
+                        <li class="jour active"><a href="#">Semaine précidente</a></li>
+                        <li class="jour"><a href="#">Choisir une date précise</a></li>
+                    </ul>
+            </span>
+        </section>
+        <section class="day-section glass">
+            <h2>
+                Plat de lundi 23 decembre
+            </h2>
+            <section class="day-section__content">
+                <div class="plat-de-jour">
+                    <h2>
+                        Plat d'entree
+                    </h2>
+                    <div class="cadre">
+                        <div class="glace">
+                            <div class="cadre__row">
+                                <h3 class="cadre__row__title">Titre de plat</h3>
+                                <div class="cadre__row__tickets">
+                                    <span class="ticket ticket--red">ticket</span>
+                                    <span class="ticket ticket--green">ticket</span>
+                                </div>
                             </div>
-                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda at earum esse expedita facere fuga illum in ipsum<a href="#">plus de détails</a>  </p>
                         </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua   <a href="#">plus de détails</a>  </p>
-                        
-                           
-                       
-                     
-                      
                     </div>
+                    <p>Votre evalution</p>
+                    <div class="stars">
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                    </div>
+                    <p>Votre avis (optionel)</p>
+                    <input type="text" placeholder="Laisser votre avis ici" >
+                    <button class="plat-de-jour__save">Enregestrer</button>
                 </div>
-                
-                <p>Votre evalution</p>
-                <img src="images/etoile.svg" alt="etoil" width="53%">
-                <p>Votre avis (optionel)</p>
-                <input type="text" placeholder="Laisser votre avis ici" >
-                <button class="plat-de-jour__save">Enregestrer</button>
-            </div>
-            <div class="plat-de-jour">
-                <h3>
-                    Plat principal
-                </h3>
-                <div class="cadre">
-                    <div class="glace">
-                        <div class="cadre__row">
-                            <h4 class="cadre__row__title">Titre de plat</h4>
-                            <div class="cadre__row__tickets">
-                                <button class="ticket ticket--red">Tickat</button>
-                                <button class="ticket ticket--green">Tickat</button>
-                                
+                <div class="plat-de-jour">
+                    <h2>
+                        Plat principal
+                    </h2>
+                    <div class="cadre">
+                        <div class="glace">
+                            <div class="cadre__row">
+                                <h3 class="cadre__row__title">Titre de plat</h3>
+                                <div class="cadre__row__tickets">
+                                    <span class="ticket ticket--red">ticket</span>
+                                    <span class="ticket ticket--green">ticket</span>
+                                </div>
                             </div>
-                        </div>    
-                        
-                    
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua  <a href="#">plus de détails</a></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda at earum esse expedita facere fuga illum in ipsum<a href="#">plus de détails</a>  </p>
+                        </div>
                     </div>
-                 </div>
-                
-                <p>Votre evalution</p>
-                <img src="images/etoile.svg" alt="etoil" width="53%">
-                <p>Votre avis (optionel)</p>
-                <input type="text" placeholder="Laisser votre avis ici" >
-                <button class="plat-de-jour__save">Enregestrer</button>
-            </div>
-            <div class="plat-de-jour">
-                <h3>
-                    Plat de dessert
-                </h3>
-                <div class="cadre ">
-                    <div class="glace">
-                        <div class="cadre__row">
-                            <h4 class="cadre__row__title">Titre de plat</h4>
-                            <div class="cadre__row__tickets">
-                                <button class="ticket ticket--red">Tickat</button>
-                                <button class="ticket ticket--green">Tickat</button>
-                                
-                            </div>
-                        </div>   
-                        
-                   
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua  <a href="#">plus de détails</a></p>
+                    <p>Votre evalution</p>
+                    <div class="stars">
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
                     </div>
+                    <p>Votre avis (optionel)</p>
+                    <input type="text" placeholder="Laisser votre avis ici" >
+                    <button class="plat-de-jour__save">Enregestrer</button>
                 </div>
-                
-                <p>Votre evalution</p>
-                <img src="images/etoile.svg" alt="etoil" width="53%">
-                <p>Votre avis (optionel)</p>
-                <input type="text" placeholder="Laisser votre avis ici" >
-                <button class="plat-de-jour__save">Enregestrer</button>
-            </div>
-
-         
-
-           
+                <div class="plat-de-jour">
+                    <h2>Plat de dessert
+                    </h2>
+                    <div class="cadre">
+                        <div class="glace">
+                            <div class="cadre__row">
+                                <h3 class="cadre__row__title">Titre de plat</h3>
+                                <div class="cadre__row__tickets">
+                                    <span class="ticket ticket--red">ticket</span>
+                                    <span class="ticket ticket--green">ticket</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda at earum esse expedita facere fuga illum in ipsum<a href="#">plus de détails</a>  </p>
+                        </div>
+                    </div>
+                    <p>Votre evalution</p>
+                    <div class="stars">
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                    </div>
+                    <p>Votre avis (optionel)</p>
+                    <input type="text" placeholder="Laisser votre avis ici" >
+                    <button class="plat-de-jour__save">Enregestrer</button>
+                </div>
+            </section>
+        </section>
+        <section class="day-section glass">
+            <h2>
+                Plat de lundi 23 decembre
+            </h2>
+            <section class="day-section__content">
+                <div class="plat-de-jour">
+                    <h2>
+                        Plat d'entree
+                    </h2>
+                    <div class="cadre">
+                        <div class="glace">
+                            <div class="cadre__row">
+                                <h3 class="cadre__row__title">Titre de plat</h3>
+                                <div class="cadre__row__tickets">
+                                    <span class="ticket ticket--red">ticket</span>
+                                    <span class="ticket ticket--green">ticket</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda at earum esse expedita facere fuga illum in ipsum<a href="#">plus de détails</a>  </p>
+                        </div>
+                    </div>
+                    <p>Votre evalution</p>
+                    <div class="stars">
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                    </div>
+                    <p>Votre avis (optionel)</p>
+                    <input type="text" placeholder="Laisser votre avis ici" >
+                    <button class="plat-de-jour__save">Enregestrer</button>
+                </div>
+                <div class="plat-de-jour">
+                    <h2>
+                        Plat principal
+                    </h2>
+                    <div class="cadre">
+                        <div class="glace">
+                            <div class="cadre__row">
+                                <h3 class="cadre__row__title">Titre de plat</h3>
+                                <div class="cadre__row__tickets">
+                                    <span class="ticket ticket--red">ticket</span>
+                                    <span class="ticket ticket--green">ticket</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda at earum esse expedita facere fuga illum in ipsum<a href="#">plus de détails</a>  </p>
+                        </div>
+                    </div>
+                    <p>Votre evalution</p>
+                    <div class="stars">
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                    </div>
+                    <p>Votre avis (optionel)</p>
+                    <input type="text" placeholder="Laisser votre avis ici" >
+                    <button class="plat-de-jour__save">Enregestrer</button>
+                </div>
+                <div class="plat-de-jour">
+                    <h2>Plat de dessert
+                    </h2>
+                    <div class="cadre">
+                        <div class="glace">
+                            <div class="cadre__row">
+                                <h3 class="cadre__row__title">Titre de plat</h3>
+                                <div class="cadre__row__tickets">
+                                    <span class="ticket ticket--red">ticket</span>
+                                    <span class="ticket ticket--green">ticket</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda at earum esse expedita facere fuga illum in ipsum<a href="#">plus de détails</a>  </p>
+                        </div>
+                    </div>
+                    <p>Votre evalution</p>
+                    <div class="stars">
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                        <span class="star star--empty"></span>
+                    </div>
+                    <p>Votre avis (optionel)</p>
+                    <input type="text" placeholder="Laisser votre avis ici" >
+                    <button class="plat-de-jour__save">Enregestrer</button>
+                </div>
+            </section>
         </section>
 
-
-        <h2>
-            Plat de lundi 23 decembre
-        </h2>
-        <section>
-            
-          
-
-
-            <div class="plat-de-jour">
-                <h3>
-                    Plat d'entree
-                </h3>
-                <div class="cadre  ">
-                    <div class="glace">
-                        <div class="cadre__row">
-                            <h4 class="cadre__row__title">Titre de plat</h4>
-                            <div class="cadre__row__tickets">
-                                <button class="ticket ticket--red">Tickat</button>
-                                <button class="ticket ticket--green">Tickat</button>
-                                
-                            </div>
-                            
-                        </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua  <a href="#">plus de détails</a></p>
-                     </div>
-                </div>
-                
-                <p>Votre evalution</p>
-                <img src="images/etoile.svg" alt="etoil" width="53%">
-                <p>Votre avis (optionel)</p>
-                <input type="text" placeholder="Laisser votre avis ici" >
-                <button class="plat-de-jour__save">Enregestrer</button>
-            </div>
-            <div class="plat-de-jour">
-                <h3>
-                    Plat principal
-                </h3>
-                <div class="cadre">
-                    <div class="glace">
-                        <div class="cadre__row">
-                            <h4 class="cadre__row__title">Titre de plat</h4>
-                            <div class="cadre__row__tickets">
-                                <button class="ticket ticket--red">Tickat</button>
-                                <button class="ticket ticket--green">Tickat</button>
-                                
-                            </div>
-                        </div>    
-                        
-                    
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua  <a href="#">plus de détails</a></p>
-                    </div>
-                 </div>
-                
-                <p>Votre evalution</p>
-                <img src="images/etoile.svg" alt="etoil" width="53%">
-                <p>Votre avis (optionel)</p>
-                <input type="text" placeholder="Laisser votre avis ici" >
-                <button class="plat-de-jour__save">Enregestrer</button>
-            </div>
-            <div class="plat-de-jour">
-                <h3>
-                    Plat de dessert
-                </h3>
-                <div class="cadre ">
-                    <div class="glace">
-                        <div class="cadre__row">
-                            <h4 class="cadre__row__title">Titre de plat</h4>
-                            <div class="cadre__row__tickets">
-                                <button class="ticket ticket--red">Tickat</button>
-                                <button class="ticket ticket--green">Tickat</button>
-                                
-                            </div>
-                        </div>   
-                        
-                   
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua  <a href="#">plus de détails</a></p>
-                    </div>
-                </div>
-                
-                <p>Votre evalution</p>
-                <img src="images/etoile.svg" alt="etoil" width="53%">
-                <p>Votre avis (optionel)</p>
-                <input type="text" placeholder="Laisser votre avis ici" >
-                <button class="plat-de-jour__save">Enregestrer</button>
-            </div>
-
-         
-
-           
-        </section> 
-
-
-    
-
-
-       
-
     </main>
-
-
-
     <footer>
 
     </footer>
