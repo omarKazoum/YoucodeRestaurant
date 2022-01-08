@@ -1,14 +1,11 @@
 body{
   box-sizing: border-box;
-}
+}   
 main{ 
   height: 100%;
   margin: auto;
   width: 90%;
-}
-
-
-
+}             
 .piechart1 {
 --chart: 50%;
 --hole: 50%;
@@ -32,6 +29,14 @@ border-radius: 50%;
 position: relative;
 left: -10%;
 }
+.sans_avis{
+  position: relative;
+   left: -55px;
+}
+.partie h4{
+  position: relative;
+  left: -30px;
+}
 .contente{
   display: flex;
   margin: auto;
@@ -40,11 +45,7 @@ left: -10%;
   border-radius: 5px;
   justify-content: space-evenly;
 }
-.dach p{
-position: relative;
-left: 82px;
-top: -42px;
-}
+.dach p{position: relative;left: 82px;top: -58px;}
 .dach{
   width: 355px;
 }
@@ -75,11 +76,11 @@ top: 4px;
   margin: 10px;
   width: 190px;
 }
-#progressbar>div {  
+#progressbar>div {
   background-color: #FDD835;
-  width:  80%; 
+  width:  80%;
   height: 12px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .porsontage{
   transform:translate(16px, 20px);
@@ -98,8 +99,8 @@ top: 4px;
 #progressbar {
   background-color: rgb(255, 255, 255);
   border-radius: 13px;
-  border: solid blacK;
-  margin: 10px;  
+  border: solid blacK 2PX;
+  margin: 10px;
   width: 90%;
   height: 12px;
 }
@@ -121,3 +122,8 @@ top: 4px;
   width: 100px;
   height: 80px;
 }
+.dach .clients{
+  position: relative;
+  top: -46px;
+  left: 85px;
+} 
