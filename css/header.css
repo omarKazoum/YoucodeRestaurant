@@ -3,6 +3,11 @@ header a.active{
     color:var(--color-green);
     border-bottom: 2px var(--color-green) solid;
 }
+header a.active:hover{
+
+    color:inherit;
+    background-color: inherit;
+}
 header{
     display:flex;
     justify-content: space-between;
@@ -91,8 +96,9 @@ header .mobile-drop-down .profile-dropdown{
         flex: 1;
     }
     header .mobile-drop-down .profile-dropdown__btn{
+        box-sizing: content-box;
         width: 30px;
-
+        padding: 10px;
     }
     header .mobile-drop-down .mobile-drop-down__content,header .mobile-drop-down:hover .mobile-drop-down__content{
         text-align: center;
@@ -126,8 +132,10 @@ header .mobile-drop-down .profile-dropdown{
         box-shadow: 0px 0px 4px #000A;
         color: black;
     }
-    .profile-dropdown:hover .profile-drop-down__content{
-        display: block;
+    .profile-dropdown:hover .profile-dropdown__content{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
     }
     header nav{
         flex: 1;

@@ -1,225 +1,180 @@
-
-
 :root{
     --button-color: #43A047;
-   --bgimag:url('images/image_bg.jpg');
-
 }
-
-
-body{
-
+*{
     box-sizing: border-box;
-    background-image: var(--bgimag);
-    background-repeat: no-repeat;
-  
-    font-family: 'Poppins';
-    background-size: cover;
 
-  
-    background-position: center;
-    background-attachment: fixed;
-   
-   
 }
-.drop-down .drop-down-btn{
-  
-    border: NONE;
+.more-user-wrapper{
+    margin: 15px;
+    display:flex;
+    justify-content: center;
+}
+.user__operation__search{
+    margin: 5px 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid var(--color-green);
     background-color: white;
-    margin-top: 24%;
-  
-
+    overflow: hidden;
 }
-
-.user__compte ul{
+.user__operation__search input[type='text']{
+    padding: 5px 15px;
+    outline:none;
+    border: none;
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+}
+.filter_user__radio input{
+    width: 20px ;
+    height:20px ;
+    color:red
+}
+.user__operation__search .btn-submit{
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    border: none;
+    background-color: unset;
+    border-left: 1px solid var(--button-color);
+}
+.user-comptes-section{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    justify-content: space-between;
+}
+.user-compte{
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0px 0px 6px #000000;
+}
+.user-compte .user-image{
+    width:150px;
+    height: 150px;
+}
+.user-compte .text{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.user-compte .text .user-status{
+    font-size: 16px;
+    color:#222;
+}
+.user-compte .text > *{
+    margin: 0px;
+}
+.user-compte .drop-down{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    direction: rtl;
+}
+.user-compte .drop-down .drop-down-content{
+    top:15px;
+    right: 15px;
+    direction: ltr;
+    width: 200px;
+}
+.user-compte .drop-down .drop-down-content li{
+    padding: 5px;
+}
+.user-compte .drop-down .drop-down-content li:hover{
+    color: white;
+    background-color: var(--color-green);
+}
+.user-compte .drop-down .drop-down-content a{
+    color: inherit;
+    text-decoration: none;
+}
+.user-compte .btn-more{
+    box-sizing: content-box;
+    background-origin: content-box;
+    top: 0px;
+    padding: 15px;
+    width:5px;
+    height: 30px;
+    display: inline-block;
+}
+.user-compte ul{
     list-style: none;
     flex-direction: column;
-    WIDTH: 203PX;
     cursor: pointer;
 }
 
-.user{
+.filter_user{
     display: flex;
-  
     justify-content: space-between;
-
-
 }
-
+main .btn-with-image {
+    height: 50px;
+    text-decoration: none;
+    background-color:white;
+    color: black;
+}
+.filter_user__radio{
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
 .user__operation__search{
-    DISPLAY: FLEX;
-    JUSTIFY-CONTENT: SPACE-BETWEEN;
-    padding: 0% 1%;
-    border-radius: 28px;
-    BORDER: 1PX SOLID var(--button-color);
-    BACKGROUND-COLOR: WHITE;
-    width: 29%;
-    position: RELATIVE;
-
-  
-}
-.user__operation__add{
-    DISPLAY: FLEX;
-    JUSTIFY-CONTENT: SPACE-BETWEEN;
-    padding: 0% 1% ;
-    border-radius: 28px;
-  
-    BORDER: 1PX SOLID #707070;
-    BACKGROUND-COLOR: WHITE;
-}
-.user__operation__add input{
-       BORDER:none;
-       border-radius: 25PX;
-       outline: none;
-    
-}
-.user__operation__search input{
-   
-    MARGIN: 0PX;
-    border: none;
-    BACKGROUND-COLOR: WHITE;
-    border-radius: 25PX;
-    WIDTH: 100%;
-    outline: none;
-}
-.user__operation__search img{
-    POSITION: relative;
-    border-left: 1px solid var(--button-color);
-    padding: 3%;
-
-}
-
-.user__compte{
-    background-color: white;
-    display: flex;
-    JUSTIFY-CONTENT: space-evenly;
-  
-    WIDTH: 100%;
-    border-radius: 18px;
-    border: 1px #707070 solid;
-    MARGIN: 1%;
-}
-.user_group__compte{
-    
-    display: flex;
-    flex-direction: row;
-    MARGIN: 0;
-
-
-}
-h2{
-font-size: 22px;
-}
-.user_compte__menu{
-    MARGIN: 0% -7% 23% 0%;
-
-}
-.user_compte__menu button{
-    background: white;
-    border: none;
-    margin-top: 52%;
-}
-H1{
-    position: static;
-}
-summary{
-    margin: 1% 47%;
-    PADDING: 1%;
-    BACKGROUND-COLOR: WHITE;
-    border-radius: 11PX;
-    border: 1px solid #707070;
-  
-    
+    width: 100%;
 }
 .filter_user{
-    
-    
-    PADDING: 1%;
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-
+    width: 100%;
 }
-.imageface {
-    border-radius: 50%;
-    BOX-SIZING: border-box;
-    PADDING: 1%;
-    width: 134px;
+.filter_user > h2{
+    margin-right: 10px;
+}
+.btn-add-user-desktop{
+    display:none;
+}
+.row-search-and-filter{
+    flex-direction: column-reverse;
 }
 
-
-@media (min-width: 761px)   and (max-width: 1000px) { 
-    .user__operation__add input{
-        display: none;  
-          
- }
- .user__operation__search {
-
-    width: 30%;
-    right: -1%;
- }
- .filter_user {
-  
-    WIDTH: 56%;
-}
-  
-}
-
-
-
-@media (max-width: 760px) {
-    body{
-        margin: 2%;
-       
+/* for mobile*/
+@media all and (min-width:900px){
+    .user-compte{
+        width:49%;
     }
-    summary{
-        margin: 1% 40%;
-    
-      
-        
-    }
-    section{
-        display: flex;
-        flex-direction: column;
-    }
-  
-    .user_group__compte{
-        display: flex;
-        flex-direction: column;
-       justify-content: space-between;
-    
-    
-    }
-    .user{
-        display: flex;
-        flex-direction: column-reverse;        
-    }
-   .user__operation__search {
-    width: 98%;
-    MARGIN: 9% 0% 6% 0%;
-    }
-    .user__operation__add input{
-        display: none;  
-          
- }
-.user__operation__add img{
-   color: green;
-    right: 0px; 
 }
 
-.user__operation__add{
-  
-    padding: 2% 4%;
-    margin: 1% 1% 1% 83%;
+summary{
+    text-align: center;
+    margin: auto;
 }
-   h1{
-    POSITION: ABSOLUTE;
-    font-size: 18px;
+@media all and (min-width:1080px) {
+    .btn-add-user-desktop{
+        display: inline-flex ;
+    }
+    .btn-add-user-mobile{
+        display: none ;
+    }
+    .row-search-and-filter{
+        flex-direction: row;
+    }
+    .filter_user{
+        width:40%;
+    }
+    .user__operation__search{
+        width:40%;
+    }
 
-   }
-   .filter_user{
-    
-    WIDTH: 100%;
+    .user-compte{
+        width:33%;
+    }
 }
-}
-

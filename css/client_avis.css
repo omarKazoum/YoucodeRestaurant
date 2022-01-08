@@ -1,6 +1,6 @@
 :root{
     --button-color: #43A047;
-    --img-plat: url('images/plat-exemple-img.png');
+    --img-plat: url('../images/plat-exemple-img.png');
 
 }
 main h3{
@@ -74,8 +74,35 @@ main input[type="text" ]{
 }
 main .star:hover{
     cursor: pointer;
-    background-image: url("images/star-full.svg");
+    background-image: url("../images/star-full.svg");
 }
+
+.row-top .drop-down li{
+    list-style-type: none;
+    display: block;
+    width: 100%;
+}
+main .drop-down a{
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    padding: 7px;
+    display: inline-block;
+}
+.row-top .drop-down a:hover{
+    background-color:var(--color-green);
+    color: white;
+    cursor: pointer;
+}
+.row-top .drop-down .drop-down-content{
+    right: 0px;
+    top: 8px;
+    flex-direction: column;
+    width: 250px;
+}
+
+
 @media all and (max-width: 1280px) {
     .plat-de-jour{
         width:49%;
