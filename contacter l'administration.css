@@ -1,0 +1,46 @@
+
+body{
+     background-image: url("images/image_bg.jpg");
+background-repeat: no-repeat; 
+background-size: cover;
+}
+main{
+    height: 200px;
+    width: 95%;
+    margin: auto;
+}
+main input{
+   
+    width: 97%;
+    height: 61%;
+    padding: 10px;
+    border: solid #43A047 1px;
+    border-radius: 20px;
+}
+
+
+
+main button{
+    width: 99%;
+    height: 37%;
+    padding: 8px;
+    margin-top: 30px;
+    background-color: #43A047;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+@media all and (min-width:900px) {
+    main{
+        width: 30%;
+        position: relative;
+        top: 100px;
+    }
+}
+@media all and (min-width:500px) {
+    main{
+        width: 100%;
+        position: relative;
+        top: 100px;
+    }
+}

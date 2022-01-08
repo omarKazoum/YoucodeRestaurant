@@ -1,0 +1,119 @@
+:root{
+    --button-color: #43A047;
+    --img-plat: url('../images/plat-exemple-img.png');
+
+}
+main h3{
+    font-size: 25px;
+}
+.cadre{
+    background-image: var( --img-plat);
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.glace{
+    overflow: hidden;
+    padding: 15px;
+    background:linear-gradient(to bottom,#040404aa,#57575700);
+}
+.cadre__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cadre__row__title{
+    font-size: 28px;
+}
+.plat-de-jour p{
+    font-size: 18px;
+}
+.plat-de-jour a{
+    color: white;
+}
+.plat-de-jour{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+.day-section{
+    padding: 5px;
+}
+.day-section+.day-section{
+    margin-top: 15px;
+}
+.day-section__content{
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    column-gap:5px;
+    row-gap: 50px;
+}
+.plat-de-jour__save {
+    cursor: pointer;
+    background-color: var(--button-color);
+    border-radius: 14px;
+    color: white;
+    font-size: 18px;
+    border:0;
+    width: fit-content;
+    padding: 15px 60px;
+    margin-top: 10px;
+}
+main input[type="text" ]{
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 20px;
+    border:0;
+    outline: .11em solid #707070;
+}
+main .star:hover{
+    cursor: pointer;
+    background-image: url("../images/star-full.svg");
+}
+
+.row-top .drop-down li{
+    list-style-type: none;
+    display: block;
+    width: 100%;
+}
+main .drop-down a{
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    padding: 7px;
+    display: inline-block;
+}
+.row-top .drop-down a:hover{
+    background-color:var(--color-green);
+    color: white;
+    cursor: pointer;
+}
+.row-top .drop-down .drop-down-content{
+    right: 0px;
+    top: 8px;
+    flex-direction: column;
+    width: 250px;
+}
+
+
+@media all and (max-width: 1280px) {
+    .plat-de-jour{
+        width:49%;
+    }
+}
+@media all and (max-width: 720px) {
+
+    .plat-de-jour{
+        width:100%;
+    }
+    .plat-de-jour p {
+        font-size: 15px;
+    }
+}

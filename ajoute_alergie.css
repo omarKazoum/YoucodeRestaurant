@@ -1,4 +1,8 @@
-
+body{
+    background-image: url("images/image_bg.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
 
 main{
     height: 200px;

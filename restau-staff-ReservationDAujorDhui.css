@@ -91,17 +91,6 @@ main .top-row .btn{
     align-items: center;
     gap: 2px;
 }
-.ticket{
-    border: 1px solid #0002;
-    border-radius: 5px;
-    padding: 2px;
-}
-.ticket--red{
-    background-color: #DC3238;
-}
-.ticket--green{
-    background-color: #43A047;
-}
 .card__content__row-middle{
     display: flex;
     justify-content: space-between;
@@ -111,19 +100,6 @@ main .top-row .btn{
     display: flex;
     display: inline-block;
 }
-.star{
-    display: inline-block;
-    width: 35px;
-    height:35px;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.star--full{
-    background-image: url("images/star-full.svg");
-}
-.star--empty{
-    background-image: url("images/star-empty.svg");
-}
 .card__content__description{
     font-size:14px;
     margin:0px
@@ -132,7 +108,9 @@ main .top-row .btn{
     color:white;
     display: block;
 }
-
+main .drop-down-btn{
+    background-color: unset !important;
+}
 @media  all and (max-width:720px) {
     .plat-card{
         width: 100%;

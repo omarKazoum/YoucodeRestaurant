@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> staff ajouter ou modifier un plat</title>
+    <link rel="stylesheet" href="staffoperations.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+
+    <main class="glass">
+        <form action="">
+            <div class="contenu">
+                <h1>Ajouter un plat</h1>
+                <p>Remplir le formulaire ci-dessus avec les info du plat à ajouter</p>
+
+            </div>
+
+            <div class="plat">
+                <span>Titre de plat</span>
+                <input type="text" placeholder="EX:spagettie">
+
+                <span>Description</span>
+                <input type="text" placeholder="Ex : spagettie est unplqt très populaire dans les ..">
+            </div>
+
+            <div class="plat__detaille ">
+                <span>
+                    Type de plat   <select name="plat" >
+                        <option value="Principal">Principal</option>
+                        <option value="Entrée">Entrée</option>
+                        <option value="Dessert">Dessert</option>
+                      
+                      </select>
+                </span>
+              
+                <span>image de plat</span>  
+                <div class="plat__operation">
+                  
+                    <div class="plat__operation__boutton">
+                        <button> Changer <img src="images/exchange.png"alt=""> </button>
+                        <button> Supprimer <img src="images/delete.png" alt=""> </button>
+                   </div> 
+                    <div class="photo__plat">
+                         <img src="images/plat_banner1.jpg">
+                    </div>  
+                </div>
+
+            </div>
+            <p>Allergies possibles</p>
+            <section class="chckbox__Alergie" >
+               
+                <div class="chckbox__choix">
+                    <label >Alergie1 <input type="checkbox"  name="Alergie1" ></label>
+                    <label >Alergie2 <input type="checkbox"  name="Alergie2" ></label>
+                    <label >Alergie3 <input type="checkbox"  name="Alergie3" ></label>
+                </div>
+                <div class="chckbox__choix">
+                    <label >Alergie1 <input type="checkbox"  name="Alergie1" ></label>
+                    <label >Alergie2 <input type="checkbox"  name="Alergie2" ></label>
+                    <label >Alergie3 <input type="checkbox"  name="Alergie3" ></label>
+                </div>
+                
+                </section>
+                <p>Préférence possibles</p>
+            <section class="chckbox" >
+                
+                <div class="chckbox__choix">
+                    <label >Préférence1  <input type="checkbox"  name="Alergie1" ></label>
+                    <label >Préférence1 <input type="checkbox"  name="Alergie2" ></label>
+                    <label >Préférence1 <input type="checkbox"  name="Alergie3" ></label>
+             
+                </div>
+                <div class="chckbox__choix"> 
+                    <label >Préférence1 <input type="checkbox"  name="Alergie1" ></label>
+                    <label >Préférence1 <input type="checkbox"  name="Alergie2" ></label>
+                    <label >Préférence1 <input type="checkbox"  name="Alergie3" ></label>
+             
+                </div>
+                   
+            
+             </section>
+             <button class="button">Enregestrer</button>
+
+
+
+         </form>
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>

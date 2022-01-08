@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin - gestion des utilisateurs </title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="css/admin-gestion-utilisateurs.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <header>
+    </header>
+    <main class="glass">
+        <div class="row-top">
+            <h1>
+                Gestion des utilisateurs
+            </h1>
+            <a href="Ajoute%20d'un%20utilisateur.html" class="btn-with-image btn-add-user-mobile">
+                <img src="images/add-user-ic.svg" alt="">
+            </a>
+        </div>
+        <form class="row-top row-search-and-filter">
+            <div class="filter_user">
+                <h2>Filter : </h2>
+                    <div class="filter_user__radio"><label>Tous</label>   <input type="radio" name="filter" value="all" checked="checked"></div>
+                  <div class="filter_user__radio"><label >Les absent</label>   <input type="radio" name="filter" value="absent"></div>
+                  <div class="filter_user__radio"><label >Les present</label>   <input type="radio" name="filter" value="present"></div>
+            </div>
+                <div class="user__operation__search">
+                    <input type="text" placeholder="nom de utilisateur ou email">
+                    <input type="submit" class="ic ic-search btn-submit" value="">
+                </div>
+            <a href="Ajoute%20d'un%20utilisateur.html" class="btn-with-image btn-add-user-desktop">
+                Ajouter un utilisateur
+                <img src="images/add-user-ic.svg" alt="">
+            </a>
+        </form>
+            <section class="user-comptes-section glass">
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-compte ">
+                    <img src="images/userpic.png" alt="user" class="user-image">
+                    <div class="text">
+                        <p class="user-name">User first and last name</p>
+                        <p class="user-type">User type</p>
+                        <span class="user-status">Présent/absent</span>
+                    </div>
+                    <div class="drop-down user-compte__more-options-con">
+                        <span class="drop-down-btn ic ic-more btn-more"></span>
+                        <ul class="drop-down-content">
+                            <li class="user-delete"> Supprimer</li>
+                            <li class="user-absent"> Déclarer absent</li>
+                            <li class="user-remind-pass">Souvenir de mot de pass </li>
+                            <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="more-user-wrapper"><span class="btn-with-image more-users-btn"> Plus <img src="images/arrow-down.svg" alt=""></span></div>
+        <section class="user-comptes-section glass other-users">
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-compte ">
+                <img src="images/userpic.png" alt="user" class="user-image">
+                <div class="text">
+                    <p class="user-name">User first and last name</p>
+                    <p class="user-type">User type</p>
+                    <span class="user-status">Présent/absent</span>
+                </div>
+                <div class="drop-down user-compte__more-options-con">
+                    <span class="drop-down-btn ic ic-more btn-more"></span>
+                    <ul class="drop-down-content">
+                        <li class="user-delete"> Supprimer</li>
+                        <li class="user-absent"> Déclarer absent</li>
+                        <li class="user-remind-pass">Souvenir de mot de pass </li>
+                        <li> <a href="modifier-utilisateur.html">Modifier</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

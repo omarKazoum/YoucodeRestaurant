@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.814" height="45.931" viewBox="0 0 44.814 45.931">
+    <defs>
+        <filter id="Icon_material-add-shopping-cart" x="0" y="0" width="44.814" height="45.931" filterUnits="userSpaceOnUse">
+            <feOffset dy="3" input="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity="0.161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_material-add-shopping-cart)">
+        <path id="Icon_material-add-shopping-cart-2" data-name="Icon material-add-shopping-cart" d="M14.8,12.14h2.66V8.15h3.99V5.49h-3.99V1.5H14.8V5.49H10.81V8.15H14.8ZM9.48,24.111a2.66,2.66,0,1,0,2.66,2.66A2.657,2.657,0,0,0,9.48,24.111Zm13.3,0a2.66,2.66,0,1,0,2.66,2.66A2.657,2.657,0,0,0,22.781,24.111ZM9.706,19.788l.04-.16,1.2-2.168h9.909a2.647,2.647,0,0,0,2.328-1.37l5.134-9.324L26,5.49h-.013L24.523,8.15,20.852,14.8H11.515l-.173-.359L8.363,8.15,7.1,5.49,5.849,2.83H1.5V5.49H4.16l4.788,10.1-1.8,3.259a2.572,2.572,0,0,0-.333,1.277,2.668,2.668,0,0,0,2.66,2.66H25.441v-2.66h-15.4A.338.338,0,0,1,9.706,19.788Z" transform="translate(7.5 4.5)" fill="#fff"/>
+    </g>
+</svg>

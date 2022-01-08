@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.537" height="49.547" viewBox="0 0 42.537 49.547">
+    <defs>
+        <filter id="Icon_material-delete-forever" x="0" y="0" width="42.537" height="49.547" filterUnits="userSpaceOnUse">
+            <feOffset input="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-color="#fff" flood-opacity="0.412"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_material-delete-forever)">
+        <path id="Icon_material-delete-forever-2" data-name="Icon material-delete-forever" d="M9.253,32.542a3.516,3.516,0,0,0,3.505,3.505H26.779a3.516,3.516,0,0,0,3.505-3.505V11.51H9.253Zm4.311-12.479,2.471-2.471,3.733,3.716,3.716-3.716,2.471,2.471L22.24,23.779l3.716,3.716-2.471,2.471L19.768,26.25l-3.716,3.716-2.471-2.471L17.3,23.779ZM25.9,6.253,24.15,4.5H15.387L13.634,6.253H7.5V9.758H32.037V6.253Z" transform="translate(1.5 4.5)" fill="#fff"/>
+    </g>
+</svg>
