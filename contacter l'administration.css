@@ -18,6 +18,15 @@ main input{
     border-radius: 20px;
 }
 
+main .ajoute_alergie{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+form{
+     width: 40%;
+     justify-content: center;
+     align-items: center;
+}
 
 
 main button{
