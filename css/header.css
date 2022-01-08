@@ -111,8 +111,8 @@ header .mobile-drop-down .profile-dropdown{
     header .mobile-drop-down .profile-dropdown{
         display: inline-flex;
         border-top: 0px solid #eeee;
-        margin-top: 5px;
-        padding-top: 5px;
+        /*! margin-top: 5px; */
+        /*! padding-top: 5px; */
         direction: rtl;
     }
 
