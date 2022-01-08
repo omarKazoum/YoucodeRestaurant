@@ -10,7 +10,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
-    background-image: url("images/image_bg.jpg");
+    background-image: url("../images/image_bg.jpg");
     padding: 15px;
 }
 /* to create tickets more easily*/
@@ -35,10 +35,10 @@ body{
     background-size: contain;
 }
 .star--full{
-    background-image: url("images/star-full.svg");
+    background-image: url("../images/star-full.svg");
 }
 .star--empty{
-    background-image: url("images/star-empty.svg");
+    background-image: url("../images/star-empty.svg");
 }
 /* to create a glass easily*/
 .glass{
@@ -115,24 +115,24 @@ body{
 /* to insert an delete icon inside an element*/
 .ic-delete{
     padding-left: 4px;
-    background-image: url("images/delete-ic.svg");
+    background-image: url("../images/delete-ic.svg");
 }
 /* to insert an edit icon inside an element*/
 .ic-edit{
     padding: 8px 6px 8px 10px;
-    background-image: url("images/edit-ic.svg");
+    background-image: url("../images/edit-ic.svg");
 }
 .ic-shop{
     padding:6px 5px 2px 2px;
-    background-image: url("images/shop-ic.svg");
+    background-image: url("../images/shop-ic.svg");
 }
 .ic-search{
     padding:6px 5px 2px 2px;
     background-origin: content-box;
-    background-image: url("images/search.svg");
+    background-image: url("../images/search.svg");
 }
 .ic-more{
-    background-image: url("images/trois-point.svg");
+    background-image: url("../images/trois-point.svg");
 
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -168,10 +168,43 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+/* for forms*/
+
+form input{
+    width: 100%;
+    padding: 15px;
+    font-size:18px;
+    border:solid var(--color-green) 1px;
+    border-radius: 15px;
+    outline: 0;
+    box-sizing: border-box;
+}
+.btn-green{
+    border: 0;
+    background-color: var(--color-green);
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size:18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn-green--small{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.form-row{
+    margin: 5px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
 /*for mobile*/
 
 @media all and (max-width: 720px){
     body{
-        background-image: url('images/image_bg_mobile.jpg');
+        background-image: url('../images/image_bg_mobile.jpg');
     }
 }
