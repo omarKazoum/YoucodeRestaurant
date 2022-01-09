@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> staff ajouter ou modifier un plat</title>
-    <link rel="stylesheet" href="staffoperations.css">
+    <title> staff ajouter un plat</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/staffoperations.css">
 </head>
 <body>
-    <header>
+<header>
+    <img src="images/logo.svg" alt="" id="logo">
+    <div class="mobile-drop-down">
+        <img src="images/berger.svg" alt="" class="mobile-drop-down__btn">
+        <div class="mobile-drop-down__content">
+            <nav>
+                <ul>
+                    <li><a href="restau-staff-ReservationDAujorDhui.html" >Reservation d'aujord'hui</a></li>
+                    <li><a href="restau-staff-statistiques.html" >Statistiques</a></li>
+                    <li><a href="restau-staff-menu-de-la-semaine.html" class="active">Menu</a></li>
+                </ul>
+            </nav>
+            <div class="profile-dropdown">
+                <img src="images/ii.svg"  alt="" class="profile-dropdown__btn">
+                <ul class="profile-dropdown__content">
+                    <li><a href="restau-staff-mon-profile.html">Mon profile</a></li>
+                    <li><a href="restau-staff_login%20.html">Se déconnecter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 
-    </header>
-
-
-    <main class="glass">
-        <form action="">
+<main class="glass">
+        <form action="restau-staff-menu-de-la-semaine.html">
             <div class="contenu">
                 <h1>Ajouter un plat</h1>
                 <p>Remplir le formulaire ci-dessus avec les info du plat à ajouter</p>
@@ -86,16 +107,33 @@
             
              </section>
              <button class="button">Enregestrer</button>
-
-
-
          </form>
     </main>
+<footer>
+    <nav class="menu-items row">
+        <ul class="menu-item-list">
+            <li><a href="restau-staff-ReservationDAujorDhui.html" >Reservation d'aujord'hui</a></li>
+            <li><a href="restau-staff-statistiques.html" >Statistiques</a></li>
+            <li><a href="restau-staff-menu-de-la-semaine.html" class="active">Menu</a></li>
+            <li><a href="Apropos.html">A propos</a></li>
+            <li><a href="contacter%20l'administration.html">Nous contacter</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="social">
+            <img src="images/fb-ic.svg" alt="fb">
+            <img src="images/twitter-ic.svg" alt="twitter">
+            <img src="images/insta-ic.svg" alt="instagram">
+            <img src="images/youtube_ic.svg" alt="youtube">
+        </div>
+        <div class="partners">
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/ocp-logo.png" alt="" ></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+        </div>
+    </div>
+</footer>
 
-
-
-    <footer>
-
-    </footer>
 </body>
 </html>

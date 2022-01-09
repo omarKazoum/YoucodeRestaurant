@@ -1,8 +1,8 @@
 :root{
     --button-color: #43A047;
 
-   --img-plat: url('images/plat-exemple-img.png');
-   --bgimag:url('images/image_bg.jpg');
+   --img-plat: url('../images/plat-exemple-img.png');
+   --bgimag:url('../images/image_bg.jpg');
 
 }
 

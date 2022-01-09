@@ -1,17 +1,27 @@
 $(function(){
-    //TODO::finish allerts
+    //admin users manage
     $(".user-delete").on("click",function(){
         console.log("user deleted");
+        $(this).parent().parent().parent().fadeOut();
+        Swal.fire(
+            'Réussite!',
+            'Utilisateur bien supprimé',
+            'success'
+        );
     });
 
     $(".user-absent").on("click",function(){
         console.log("user absent");
+        Swal.fire(
+            "Utilisateur est désormais absent!<br><small ='red'>il n\'aura pas lde droit de choisir le plat d\'ajord\'hui</small>",
+            '',
+            'success'
+        );
     });
 
     $(".user-remind").on("click",function(){
         console.log("email envoyé");
     });
-
     var moreUsersShown=false;
     $(".other-users").hide();
     $(".more-users-btn").on("click",function(){
@@ -24,7 +34,7 @@ $(function(){
     $(".btn-reset-pass").on("click",function(){
         console.log("btn reset pass");
     })
-    // admin prefsa nd allergies
+    // admin prefs and allergies
     $(".btn-action-del-pref").on("click",function(){
         console.log("delete pref");
         Swal.fire(
@@ -53,4 +63,16 @@ $(function(){
         );
         $(this).parent().parent().fadeOut();
     });
+    //reastau staff menu
+    $('.plat-item .btn-circle--delete').on("click",function (e){
+        console.log("delete");
+        e.preventDefault();
+        $(this).parent().fadeOut();
+        Swal.fire(
+            'Réussite!',
+            'Plat bien supprimé',
+            'success'
+        );
+    })
+    $('.plat-item .btn-circle--edit').prop('href',"restau_staff-modifier-un-plat.html");
 });
