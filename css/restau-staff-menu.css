@@ -68,7 +68,7 @@
     width: 100%;
 }
 .plat-item__content-for-image-wrapper{
-    background-image:url("images/sandwitch_1.jpg");
+    background-image:url("../images/sandwitch_1.jpg");
     background-size: cover;
     border-radius: 20px;
     overflow: hidden;
@@ -161,6 +161,30 @@ main .choix-de-plat.top-row .btn{
         color: white;
     }
 
+}
+.row-top .drop-down li{
+    list-style-type: none;
+    display: block;
+    width: 100%;
+}
+main .drop-down a{
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    padding: 7px;
+    display: inline-block;
+}
+.row-top .drop-down a:hover{
+    background-color:var(--color-green);
+    color: white;
+    cursor: pointer;
+}
+.row-top .drop-down .drop-down-content{
+    right: 0px;
+    top: 8px;
+    flex-direction: column;
+    width: 250px;
 }
 @media all and (min-width: 810px) {
     /* end of for the top row with for sellecting the a day*/

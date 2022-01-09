@@ -19,3 +19,4 @@ $(".more-users-btn").on("click",function(){
         $("other-users").show();
     moreUsersShown=!moreUsersShown;
 })
+//btn-reset-pass
