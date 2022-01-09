@@ -1,0 +1,165 @@
+/* for the top row with for sellecting the a day*/
+.top-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.jours-wrapper li{
+    list-style-type: none;
+}
+.mobile-jours-con{
+    direction: rtl;
+    flex: 1;
+}
+.mobile-jours-con .drop-down-btn{
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border:solid #eeee 2px;
+    direction: ltr;
+}
+.mobile-jours-con .drop-down-btn img{
+    width:30px;
+    height: 30px;
+}
+.mobile-jours-con li{
+    display: block;
+}
+.mobile-jours-con.drop-down,.mobile-jours-con.drop-down:hover{
+    display: block;
+}
+.mobile-jours-con.drop-down .drop-down-content{
+    margin: 0px;
+    top: 2.8em;
+    text-align: left;
+    display: none;
+}
+.mobile-jours-con.drop-down:hover .drop-down-content{
+    display: block;
+}
+.mobile-jours-con.drop-down .drop-down-content li:hover{
+    background-color: #66A9BE;
+    cursor:pointer
+}
+/*for desktop day selction*/
+.desktop-jours-con{
+    display: none;
+    box-shadow: 0px 0px 31px 3px #00000033;
+}
+/*end of for the top row with for sellecting the a day*/
+
+/* for the plats section*/
+.plat-section{
+    margin-top: 35px;
+}
+.plats-section__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+.plat-item{
+    position: relative;
+    color: white;
+    width: 100%;
+}
+.plat-item__content-for-image-wrapper{
+    background-image:url("images/sandwitch_1.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.plat-item .plat-item__top-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.plat-item .ticket+.ticket{
+    margin-left:5px;
+}
+.plat-item__content-wrapper{
+    overflow: hidden;
+    padding: 15px;
+    background:linear-gradient(to bottom,#040404aa,#57575700);
+}
+.plat-item .plat-item__description{
+    font-size: 15px;
+}
+.plat-item a{
+    color:white;
+    cursor: pointer;
+    display: block;
+}
+.plat-item .btn-circle{
+    position: absolute;
+    z-index: 2;
+}
+.btn-circle--edit{
+    top:-5px;
+    right: -10px;
+}
+.btn-circle--delete{
+    bottom:-5px;
+    right: -10px;
+}
+.btn-circle--shop{
+    bottom: -5px;
+    right: -10px;
+}
+
+@media all and (min-width: 720px) {
+    /* for the top row with for sellecting the a day*/
+    .top-row{
+    }
+    .mobile-jours-con.drop-down{
+        display: none;
+    }
+    .top-row > *:nth-child(1){
+        flex:2;
+    }
+    .top-row > *:nth-child(2){
+        flex:4;
+    }
+    .desktop-jours-con{
+        display: flex;
+        background-color: #F8F8F8;
+        backdrop-filter: brightness(15) opacity(16);
+        border-radius: 21px;
+        margin:0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .desktop-jours-con .jour{
+        text-align: center;
+        display: inline-block;
+        padding: 15px 15px;
+        flex: 1;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .desktop-jours-con .jour:hover{
+        background-color:#6BAB6E;
+    }
+    .desktop-jours-con .jour.active{
+        background-color: #66A9BE;
+        color: white;
+    }
+
+}
+@media all and (min-width: 810px) {
+    /* end of for the top row with for sellecting the a day*/
+    .plat-item{
+        width: 49%;
+    }
+}
+@media all and (min-width: 1080px) {
+    .plat-item{
+        width: 30%;
+    }
+}

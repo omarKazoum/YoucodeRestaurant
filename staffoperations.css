@@ -1,0 +1,192 @@
+:root{
+    --button-color: #43A047;
+
+   --img-plat: url('images/plat-exemple-img.png');
+   --bgimag:url('images/image_bg.jpg');
+
+}
+
+
+body{
+margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    background-image: var(--bgimag);
+    background-repeat: no-repeat;
+  
+    font-family: 'Poppins';
+    background-size: cover;
+
+  
+    background-position: center;
+    background-attachment: fixed;
+   
+   overflow-x: hidden;
+}
+.plat{
+display: flex;
+flex-direction: column;
+
+width: 25%;
+
+}
+.plat input{
+    padding: 10px;
+    border-radius: 20px;
+    border: solid var(--button-color) 1px;
+    width: 383%;
+}
+.photo__plat img{
+    WIDTH: 33%;
+    POSITION: RELATIVE;
+    LEFT: 29%;
+}
+.plat__operation__boutton{
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    WIDTH: 100%;
+    MARGIN: 0% -25% 0% 0%;
+    JUSTIFY-CONTENT: SPACE-AROUND;
+    cursor: pointer;
+}
+
+.plat__detaille span{
+    margin: 3% 0%;
+}
+.plat__operation{
+    display: flex
+}
+form{
+    width: 30%;
+}
+.plat__detaille{
+    
+    DISPLAY: FLEX;
+    FLEX-DIRECTION: column;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chckbox__Alergie{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    WIDTH: 145%;
+}
+.chckbox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    WIDTH: 145%;
+
+
+}
+.chckbox__choix{
+    flex-direction: column;    
+    
+    margin-top: 4%;
+    
+
+
+}
+.chckbox__Alergie label{
+    background-color: white;
+    padding: 1% 3%;
+    MARGIN: 0% 7% 0% 0%;
+    border-radius: 7PX;
+    BORDER: 1PX GREEN SOLID;
+}
+.chckbox label{
+    background-color: white;
+    padding: 1% 1.5%;
+    MARGIN: 0% 7% 0% 0%;
+    border-radius: 7PX;
+    BORDER: 1PX GREEN SOLID;
+}
+    .button{
+        border-radius: 7px;
+        background-color: var( --button-color);
+        color: white;
+        BORDER: 1PX SOLID #707070;
+        width: 100%;
+        MARGIN: 7% 0%;
+        PADDING: 2%;
+        cursor: pointer;
+    
+    }
+    select{
+        BORDER: 1px solid GREEN;
+        border-radius: 5px;
+        margin-left: 51PX;
+        PADDING-RIGHT: 15%;
+    }
+    @media (min-width: 721px)   and (max-width: 1000px) { 
+      form
+        {
+            width: 50%;
+        }
+        
+        .photo__plat img {
+           
+            LEFT: 32%;
+        }
+     }
+@media (max-width: 720px) {
+    body{
+        margin: 2%;
+       
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       
+   
+    }
+  form{
+    width: 100%;
+}
+.chckbox__choix{
+    display: flex;
+    margin-right: 18%;
+    WIDTH: 21%;  
+    
+
+
+}
+.chckbox{
+    display: flex;
+  flex-direction: row;
+  
+  justify-content: start;
+ 
+}
+.chckbox__Alergie{
+ 
+    flex-direction: row;
+    JUSTIFY-CONTENT: start;
+
+}
+.chckbox__Alergie label{
+    margin-bottom: 13%;
+}
+.chckbox label{
+   
+ 
+        background-color: white;
+        padding: 3% 6%;
+        margin: 5% 0%;
+        border-radius: 7PX;
+        BORDER: 1PX GREEN SOLID;
+    
+    
+   
+}
+
+   
+}

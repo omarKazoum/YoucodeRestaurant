@@ -4,45 +4,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css");
 body{
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
     background-image: url("images/image_bg.jpg");
     padding: 15px;
-} 
-.glass{
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: opacity(0%);
-    backdrop-filter: blur(2);
+}
+/* to create tickets more easily*/
+.ticket{
+    border: 1px solid #0002;
     border-radius: 5px;
-}  
-/** for any giver dropdown**/
-.drop-down .drop-down-btn{
-    cursor:pointer;
+    padding: 2px;
+    color:white;
 }
-.drop-down{
-    position: relative;
+.ticket--red{
+    background-color: #DC3238;
 }
-.drop-down .drop-down-content{
-    /*display: none;*/
-    position: absolute;
-    display:none;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0px 0px 4px #000A;
-    color: black;
+.ticket--green{
+    background-color: #43A047;
 }
-.drop-down:hover .drop-down-content{
-    display: flex;
-}
-/*for mobile*/
-
-@media all and (max-width: 720px){
-    body{
-        background-image: url('images/image_bg_mobile.jpg');
-    }
-
-}
-/** for teh stars**/
+/** to create stars more easily*/
 .star{
     display: inline-block;
     width: 35px;
@@ -55,4 +39,140 @@ body{
 }
 .star--empty{
     background-image: url("images/star-empty.svg");
+}
+/* to create a glass easily*/
+.glass{
+    background: rgba( 251, 251, 251, 0.4 );
+    /*box-shadow: 0 8px 37px 14px rgb(31 38 135 / 37%);*/
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    /*
+    background-color: #FBFBFB;
+    backdrop-filter: opacity(0%);
+    backdrop-filter: blur(2);
+    border-radius: 5px;
+    */
+}
+.drop-down .drop-down-btn{
+    cursor:pointer;
+    background-color: white;
+}
+.drop-down{
+    position: relative;
+}
+.user__compte .drop-down .drop-down-btn{
+    margin-top: 24%;
+    border: NONE;
+}
+.user__compte ul{
+    list-style: none;
+    flex-direction: column;
+    WIDTH: 203PX;
+    cursor: pointer;
+}
+.user__compte ul li:hover{
+    color: #6bab6ec4;
+}
+.drop-down .drop-down-content{
+    z-index: 10;
+    position: absolute;
+    display:none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px #000A;
+    color: black;
+}
+.drop-down:hover .drop-down-content{
+    display: flex;
+}
+.btn-circle{
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    background-origin: content-box;
+    display: inline-block;
+    background-size: contain;
+    box-shadow: 0px 0px 3px black;
+}
+.btn-circle--red{
+    background:radial-gradient(#e05858, #aa4242);
+}
+.btn-circle--green{
+    background:radial-gradient(var(--color-green), #327635);
+}
+/* use it with the appropriare ic--delete or ic--edit depenading on the icon that you want  */
+.ic{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-size: contain;
+    box-sizing: border-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+/* to insert an delete icon inside an element*/
+.ic-delete{
+    padding-left: 4px;
+    background-image: url("images/delete-ic.svg");
+}
+/* to insert an edit icon inside an element*/
+.ic-edit{
+    padding: 8px 6px 8px 10px;
+    background-image: url("images/edit-ic.svg");
+}
+.ic-shop{
+    padding:6px 5px 2px 2px;
+    background-image: url("images/shop-ic.svg");
+}
+.ic-search{
+    padding:6px 5px 2px 2px;
+    background-origin: content-box;
+    background-image: url("images/search.svg");
+}
+.ic-more{
+    background-image: url("images/trois-point.svg");
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #AAA9A9;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #AAA9A9;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #AAA9A9;
+}
+/* for a button with text in the left and an image*/
+.btn-with-image{
+    cursor: pointer;
+    display: inline-flex;
+    padding: 7px;
+    gap: 5px;
+    border:1px rgba(0, 0, 0, 0.25) solid;
+    border-radius: 7px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-with-image img{
+    width:30px;
+    height: 30px;
+}
+/* for the top page area to be aligned vertically*/
+.row-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*for mobile*/
+
+@media all and (max-width: 720px){
+    body{
+        background-image: url('images/image_bg_mobile.jpg');
+    }
 }
