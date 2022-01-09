@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modification-utilisateur</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/Ajoute%20d'un%20utilisateur.css">
+</head>
+
+<body>
+<header>
+    <img src="images/logo.svg" alt="" id="logo">
+    <div class="mobile-drop-down">
+        <img src="images/berger.svg" alt="" class="mobile-drop-down__btn">
+        <div class="mobile-drop-down__content">
+            <nav>
+                <ul>
+                    <li><a href="admin-choisir-un-plat.html">Plat de jour</a></li>
+                    <li><a href="admin-laisser%20un%20avis%20.html">Laisser un avis</a></li>
+                    <li><a href="admin%20allergies-préferences.html">Préférences ou allérgies</a></li>
+                    <li><a href="admin-statistiques.html">Statistiques</a></li>
+                    <li><a href="admin-gestion-des-utilisateurs.html" class="active">Gestion d'utilisateurs</a></li>
+                </ul>
+            </nav>
+            <div class="profile-dropdown">
+                <img src="images/ii.svg" alt="" class="profile-dropdown__btn">
+                <ul class="profile-dropdown__content">
+                    <li><a href="admin-mon-profile.html">Mon profile</a></li>
+                    <li><a href="admin_login%20.html">Se déconnecter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main >
+    <form action="admin-gestion-des-utilisateurs.html" class="edit-con">
+    <div class="form-row">
+        <h1>Modification d'un utilisateur</h1>
+        <p>Remplir le formulaire ci-dessus avec les infos de l'utilsateur à ajouter </p>
+    </div>
+    <div class="form-row">
+        <label>Image de profile</label>
+        <section class="profilesection">
+            <div class="bouttons">
+                <button> Changer <img src="images/exchange.png" alt=""></button>
+                <button> Supprimer <img src="images/delete.png" alt=""></button>
+            </div>
+            <div class="photo-profile">
+                <img src="images/user.png">
+            </div>
+        </section>
+    </div>
+    <div class="form-row">
+        <label for="fname">Nom</label>
+        <input type="text" id="fname" name="fname" placeholder="Ex:elidlissi">
+    </div>
+    <div class="form-row">
+        <label for="lname">Prénom</label>
+        <input type="text" id="lname" name="lname" placeholder="Ex:Youssef">
+    </div>
+    <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="mail" placeholder="Ex:example@domain.com">
+        </div>
+    <div class="form-row">
+            <label for="date">Date de naissance</label>
+            <input type="date" id="date" name="birthdate">
+        </div>
+        <div class="form-row">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Laisser vide pour générer un mot de passe">
+        </div>
+    </div>
+        <div class="form-row">
+            <lebel>Type d'utilsateur:</lebel>
+            <select class="select">
+                <option value="0">client(par defaut:)</option>
+                <option value="0">Administrateur</option>
+                <option value="0">Staff restaurant</option>
+            </select>
+        </div>
+
+    <div class="form-row ">
+        <div class="form-text-with-checkbox">
+        <label>Envoyer l'email des changements:</label>
+        <input name="send-email" type="checkbox">
+        </div>
+    </div>
+    <div class="form-row">
+        <input type="submit" class="btn-green" value="Enregistrer">
+    </div>
+    </form>
+</main>
+
+<footer>
+    <nav class="menu-items row">
+        <ul class="menu-item-list">
+            <li><a href="admin-choisir-un-plat.html">Plat de jour</a></li>
+            <li><a href="admin-laisser%20un%20avis%20.html">Laisser un avis</a></li>
+            <li><a href="admin%20allergies-préferences.html">Préférences ou allérgies</a></li>
+            <li><a href="admin-statistiques.html">Statistiques</a></li>
+            <li><a href="admin-gestion-des-utilisateurs.html" class="active">Gestion d'utilisateurs</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="social">
+            <img src="images/fb-ic.svg" alt="fb">
+            <img src="images/twitter-ic.svg" alt="twitter">
+            <img src="images/insta-ic.svg" alt="instagram">
+            <img src="images/youtube_ic.svg" alt="youtube">
+        </div>
+        <div class="partners">
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/ocp-logo.png" alt=""></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

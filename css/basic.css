@@ -150,6 +150,8 @@ body{
 }
 /* for a button with text in the left and an image*/
 .btn-with-image{
+    text-decoration: none;
+    color: black;
     cursor: pointer;
     display: inline-flex;
     padding: 7px;
@@ -202,7 +204,6 @@ form input{
     display: flex;
     flex-direction: column;
 }
-
 /*for mobile*/
 
 @media all and (max-width: 720px){

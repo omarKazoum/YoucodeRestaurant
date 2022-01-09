@@ -36,8 +36,8 @@ header a:hover{
     color: white;
 }
 header #logo{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 header .mobile-drop-down__btn{
     width: 40px;
@@ -46,6 +46,7 @@ header .mobile-drop-down__btn{
 header .mobile-drop-down a{
     cursor: pointer;
     text-align: left;
+    width: 100%;
 }
 header .mobile-drop-down{
     direction: rtl;
@@ -155,5 +156,8 @@ header .mobile-drop-down .profile-dropdown{
     }
     header nav{
         flex: 1;
+    }
+    header .mobile-drop-down a{
+        width: unset;
     }
 }

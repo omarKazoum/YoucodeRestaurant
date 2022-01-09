@@ -1,7 +1,7 @@
 body{
     
     box-sizing: border-box;
-    background-image: url("images/image_bg.jpg");
+    background-image: url("../images/image_bg.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     opacity: 1;
@@ -166,6 +166,28 @@ main form{
         margin: 80PX;
 
     }
-
 }
 
+form.edit-con{
+    display: block;
+    margin: auto;
+    padding: 0px 0px 0px 0px !important;
+}
+form.edit-con .form-text-with-checkbox{
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+}
+.select{
+    padding: 15px;
+    border-radius: 15px;
+    outline: 0;
+}
+.select option{
+    padding: 15px;
+}
+@media all and (min-width: 900px){
+    form.edit-con{
+        width:60%;
+    }
+}

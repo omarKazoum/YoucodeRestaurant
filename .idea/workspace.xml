@@ -2,28 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4527e7f5-701d-4835-8612-5be6b5399e36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-choisir-un-plat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-laisser un avis .html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleint-footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-contacter-l'administration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-mon-profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header-admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header-client.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ajoute d'un utilisateur.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ajouter-alergie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ajouter-preference.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-modifier preference.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-mon-profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-statistiques.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_login .html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer-admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header-staff.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sweet-alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restau-staff-statistiques.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restau-staff_login .html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ajoute d'un utilisateur.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Ajoute d'un utilisateur.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ajoute d'un utilisateur.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin -laisser un avis .html" beforeDir="false" afterPath="$PROJECT_DIR$/admin -laisser un avis .html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin allergies-preferences.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin allergies-preferences.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin allergies-préferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin allergies-préferences.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_choisir_un_plat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allérgies et préférences.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/allérgies-et-préférences.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client -laisser un avis .html" beforeDir="false" afterPath="$PROJECT_DIR$/client -laisser un avis .html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-allérgies et préférences .html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-allérgies-et-préférences.html" beforeDir="false" afterPath="$PROJECT_DIR$/client-allérgies-et-préférences.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-choisir-un-plat.html" beforeDir="false" afterPath="$PROJECT_DIR$/client-choisir-un-plat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_choisir_un_plat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-ajoute_alergie.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-choisir-un-plat.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin-choisir-un-plat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-gestion des utilisateurs.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/admin-gestion-des-utilisateurs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-laisser un avis .html" beforeDir="false" afterPath="$PROJECT_DIR$/admin-laisser un avis .html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-modifier-allergie.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin-modifier-allergie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajout preference.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajoute_alergie.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ajoute_alergie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allérgies et préférences.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clien_avis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_choisir_un_plat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_login .html" beforeDir="false" afterPath="$PROJECT_DIR$/client_login .html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/admin allergies-preferences.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin allergies-preferences.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/admin-gestion-utilisateurs.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin-gestion-utilisateurs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/basic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/date.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/date.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/header-admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restau-staff-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/restau-staff-menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modifier preference.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modifier-utilisateur.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/persone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statestique_admine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistique.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/statistique.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +84,7 @@
       <recent name="D:\Youcode\workshoops\youcode restauration\html code\design" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Youcode\workshoops\youcode restauration\html code\images" />
       <recent name="D:\Youcode\workshoops\youcode restauration\html code\css" />
       <recent name="D:\Youcode\workshoops\youcode restauration\html code" />
     </key>
@@ -80,7 +100,7 @@
       <workItem from="1641067034988" duration="4564000" />
       <workItem from="1641196725017" duration="12000" />
       <workItem from="1641198984857" duration="48127000" />
-      <workItem from="1641461206804" duration="73950000" />
+      <workItem from="1641461206804" duration="93204000" />
     </task>
     <task id="LOCAL-00001" summary="added admin-ajouter utilisateur for mobile">
       <created>1641200277913</created>
