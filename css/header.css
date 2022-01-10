@@ -12,6 +12,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
+    align-items: center !important;
 }
 header *{
     box-sizing: border-box;
@@ -35,8 +36,8 @@ header a:hover{
     color: white;
 }
 header #logo{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 header .mobile-drop-down__btn{
     width: 40px;
@@ -45,6 +46,7 @@ header .mobile-drop-down__btn{
 header .mobile-drop-down a{
     cursor: pointer;
     text-align: left;
+    width: 100%;
 }
 header .mobile-drop-down{
     direction: rtl;
@@ -52,9 +54,9 @@ header .mobile-drop-down{
 }
 header .mobile-drop-down .profile-dropdown__btn{
     width: 30px;
-
 }
 header .mobile-drop-down .mobile-drop-down__content{
+    z-index: 16;
     text-align: left;
     box-shadow: 0px 0px 5px var(--color-green);
     padding: 10px;
@@ -64,13 +66,17 @@ header .mobile-drop-down .mobile-drop-down__content{
 }
 header .mobile-drop-down:hover .mobile-drop-down__content{
     display: block;
+    position: absolute;
+    width: 200px;
 }
+
+.mobile-drop-down__content {}
 header .mobile-drop-down .profile-dropdown{
     border-top: 1px solid #eeee;
     margin-top: 5px;
     padding-top: 5px;
 }
-@media all and (min-width:720px){
+@media all and (min-width:1080px){
     header .mobile-drop-down .mobile-drop-down__btn{
         display: none;
     }
@@ -100,7 +106,18 @@ header .mobile-drop-down .profile-dropdown{
         width: 30px;
         padding: 10px;
     }
-    header .mobile-drop-down .mobile-drop-down__content,header .mobile-drop-down:hover .mobile-drop-down__content{
+    header .mobile-drop-down .mobile-drop-down__content{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 0px #0000;
+        background-color: #0000;
+    }
+    header .mobile-drop-down:hover .mobile-drop-down__content{
+        display: block;
+        position: relative;
+        width: unset;
         text-align: center;
         display: flex;
         justify-content: space-between;
@@ -123,7 +140,7 @@ header .mobile-drop-down .profile-dropdown{
     .profile-dropdown__content{
         z-index: 2;
         position: absolute;
-        width: 150px;
+        width: 180px;
         top: 2em;
         display: none;
         background-color: white;
@@ -133,11 +150,14 @@ header .mobile-drop-down .profile-dropdown{
         color: black;
     }
     .profile-dropdown:hover .profile-dropdown__content{
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
         align-items:flex-end;
     }
     header nav{
         flex: 1;
+    }
+    header .mobile-drop-down a{
+        width: unset;
     }
 }

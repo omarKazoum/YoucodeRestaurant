@@ -39,6 +39,7 @@
     border: none;
     background-color: unset;
     border-left: 1px solid var(--button-color);
+    border-radius: unset;
 }
 .user-comptes-section{
     display:flex;

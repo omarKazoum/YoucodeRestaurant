@@ -1,0 +1,11 @@
+input+input{
+    margin-top:15px;
+}
+.text-msg{
+    margin-bottom: 53px;
+}
+@media all and (min-width:900px){
+    main form{width:60%;
+        margin:auto;
+    }
+}

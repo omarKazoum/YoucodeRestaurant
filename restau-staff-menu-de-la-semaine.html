@@ -3,14 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Staff Restaurant - menu de la semaine</title>
-    <link rel="stylesheet" href="basic.css">
-    <link rel="stylesheet" href="restau-staff-menu.css">
-</head>
-<body >
-    <header>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/restau-staff-menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/sweet-alert.js" ></script>
+    <script src="js/main.js"></script>
 
-    </header>
-    <main>
+</head>
+<body>
+<header>
+    <img src="images/logo.svg" alt="" id="logo">
+    <div class="mobile-drop-down">
+        <img src="images/berger.svg" alt="" class="mobile-drop-down__btn">
+        <div class="mobile-drop-down__content">
+            <nav>
+                <ul>
+                    <li><a href="restau-staff-ReservationDAujorDhui.html" >Reservation d'aujord'hui</a></li>
+                    <li><a href="restau-staff-statistiques.html" >Statistiques</a></li>
+                    <li><a href="restau-staff-menu-de-la-semaine.html" class="active">Menu</a></li>
+                </ul>
+            </nav>
+            <div class="profile-dropdown">
+                <img src="images/ii.svg"  alt="" class="profile-dropdown__btn">
+                <ul class="profile-dropdown__content">
+                    <li><a href="restau-staff-mon-profile.html">Mon profile</a></li>
+                    <li><a href="restau-staff_login%20.html">Se déconnecter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
         <h1>Menu de la semaine</h1>
         <section class="top-row">
             <h2>Choisir un jour</h2>
@@ -35,9 +61,13 @@
             </div>
         </section>
         <section class="plat-section">
-            <h2 class="plat-section__title">
-                Plat d'entree
-            </h2>
+            <div class="row-top">
+                <h2 class="plat-section__title">Plat d'entree</h2>
+                <a class="btn-with-image" href="restau_staff-ajouter-un-plat.html">
+                    Ajouter un plat<img src="images/plus.png">
+                </a>
+            </div>
+
             <div class="plats-section__content">
                 <article class="plat-item">
                     <div class="plat-item__content-for-image-wrapper">
@@ -150,9 +180,15 @@
             </div>
         </section>
         <section class="plat-section">
-            <h2 class="plat-section__title">
-                Plat principal
-            </h2>
+            <div class="row-top">
+                <h2 class="plat-section__title">
+                    Plat principal
+                </h2>
+                <a class="btn-with-image" href="restau_staff-ajouter-un-plat.html">
+                    Ajouter un plat<img src="images/plus.png">
+                </a>
+            </div>
+
             <div class="plats-section__content">
                 <article class="plat-item">
                     <div class="plat-item__content-for-image-wrapper">
@@ -265,9 +301,14 @@
             </div>
         </section>
         <section class="plat-section">
-            <h2 class="plat-section__title">
-                Plat de dessert
-            </h2>
+            <div class="row-top">
+                <h2 class="plat-section__title">
+                    Plat de dessert
+                </h2>
+                <a class="btn-with-image" href="restau_staff-ajouter-un-plat.html">
+                    Ajouter un plat<img src="images/plus.png">
+                </a>
+            </div>
             <div class="plats-section__content">
                 <article class="plat-item">
                     <div class="plat-item__content-for-image-wrapper">
@@ -380,8 +421,30 @@
             </div>
         </section>
     </main>
-    <foote>
-
-    </foote>
+<footer>
+    <nav class="menu-items row">
+        <ul class="menu-item-list">
+            <li><a href="restau-staff-ReservationDAujorDhui.html" >Reservation d'aujord'hui</a></li>
+            <li><a href="restau-staff-statistiques.html" >Statistiques</a></li>
+            <li><a href="restau-staff-menu-de-la-semaine.html" class="active">Menu</a></li>
+            <li><a href="Apropos.html">A propos</a></li>
+            <li><a href="contacter%20l'administration.html">Nous contacter</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="social">
+            <img src="images/fb-ic.svg" alt="fb">
+            <img src="images/twitter-ic.svg" alt="twitter">
+            <img src="images/insta-ic.svg" alt="instagram">
+            <img src="images/youtube_ic.svg" alt="youtube">
+        </div>
+        <div class="partners">
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/ocp-logo.png" alt="" ></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

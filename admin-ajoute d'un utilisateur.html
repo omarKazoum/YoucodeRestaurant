@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajout-utilisateur</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/Ajoute d'un utilisateur.css">
+</head>
+
+<body>
+<header>
+    <img src="images/logo.svg" alt="" id="logo">
+    <div class="mobile-drop-down">
+        <img src="images/berger.svg" alt="" class="mobile-drop-down__btn">
+        <div class="mobile-drop-down__content">
+            <nav>
+                <ul>
+                    <li><a href="admin-choisir-un-plat.html" >Plat de jour</a></li>
+                    <li><a href="admin-laisser%20un%20avis%20.html" >Laisser un avis</a></li>
+                    <li><a href="admin%20allergies-préferences.html">Préférences ou allérgies</a></li>
+                    <li><a href="admin-statistiques.html" >Statistiques</a></li>
+                    <li><a href="admin-gestion-des-utilisateurs.html" class="active">Gestion d'utilisateurs</a></li>
+                </ul>
+            </nav>
+            <div class="profile-dropdown">
+                <img src="images/ii.svg"  alt="" class="profile-dropdown__btn">
+                <ul class="profile-dropdown__content">
+                    <li><a href="admin-mon-profile.html">Mon profile</a></li>
+                    <li><a href="admin_login%20.html">Se déconnecter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+       <div class="ajouter-utilisateur">
+        <div class="contenu">
+            <h1>Ajout d'un utilisateur</h1>
+            <p>Remplir le formulaire ci-dessus avec les infos de l'utilsateur à ajouter </p>
+            <div class="image-profile">
+                <p>Image de profile</p>
+                </div>
+           </div>
+           
+           <section class="profilesection">  
+            <div class="bouttons">
+                <button> Changer <img src="images/exchange.png"alt=""> </button>
+                <button> Supprimer <img src="images/delete.png" alt=""> </button>
+           </div> 
+            <div class="photo-profile">
+           <img src="images/user.png">
+            </div>  
+           </section>
+       </div>
+       
+       <form>
+       <div class="infos-users">       
+            <label for="fname">Nom</label>
+            <input type="text" id="fname" name="fname" placeholder="Ex:elidlissi">
+
+            <label for="lname">Prénom</label>
+            <input type="text" id="lname" name="lname" placeholder="Ex:Youssef">
+      
+            <label for="fmail">Email</label>
+          <input type="email" id="fmail" name="mail" placeholder="Ex:example@domain.com">
+              
+      
+          <label for="date">Date de naissance</label>
+          <input type="date" id="date" name="birthdate">
+              
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" placeholder="Laisser vide pour générer un mot de passe">
+         </div>    
+      
+         <section class="confrmer">
+            <div class="type-utilsateur" >
+                <p>Type d'utilsateur:</p>
+                <select>
+                <option value="0">client(par defaut:)</option>
+                <option value="0">Administrateur</option>
+                <option value="0">Staff restaurant</option>
+                </select>
+                </div>
+  
+         </section>
+        </form>
+
+        <div class="envoie-email">
+            <p>Envoyer l'email d'instructions:</p>
+            <input type="checkbox">
+            </div>
+
+         <a class="boutton-ajouter" href="admin-gestion-des-utilisateurs.html" style="text-decoration: none">Ajouter utilisateur</a>
+
+   </main>
+<footer>
+    <nav class="menu-items row">
+        <ul class="menu-item-list">
+            <li><a href="admin-choisir-un-plat.html" >Plat de jour</a></li>
+            <li><a href="admin-laisser%20un%20avis%20.html" >Laisser un avis</a></li>
+            <li><a href="admin%20allergies-préferences.html">Préférences ou allérgies</a></li>
+            <li><a href="admin-statistiques.html" >Statistiques</a></li>
+            <li><a href="admin-gestion-des-utilisateurs.html" class="active">Gestion d'utilisateurs</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="social">
+            <img src="images/fb-ic.svg" alt="fb">
+            <img src="images/twitter-ic.svg" alt="twitter">
+            <img src="images/insta-ic.svg" alt="instagram">
+            <img src="images/youtube_ic.svg" alt="youtube">
+        </div>
+        <div class="partners">
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/ocp-logo.png" alt="" ></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+        </div>
+    </div>
+</footer>
+   </body>

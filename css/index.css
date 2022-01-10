@@ -1,0 +1,9 @@
+.glass{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50vw;
+    height: 100vh;
+    gap: 5px;
+}

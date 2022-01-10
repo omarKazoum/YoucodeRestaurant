@@ -2,170 +2,216 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="admin allergies-preferences.css">
-  <title>Admin-allergies-preferences</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/admin%20allergies-preferences.css">
+    <title>Admin-allergies-preferences</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/sweet-alert.js" ></script>
 </head>
-
 <body>
-  <header>
-  </header>
+<header>
+    <img src="images/logo.svg" alt="" id="logo">
+    <div class="mobile-drop-down">
+        <img src="images/berger.svg" alt="" class="mobile-drop-down__btn">
+        <div class="mobile-drop-down__content">
+            <nav>
+                <ul>
+                    <li><a href="admin-choisir-un-plat.html" >Plat de jour</a></li>
+                    <li><a href="admin-laisser%20un%20avis%20.html">Laisser un avis</a></li>
+                    <li><a href="admin%20allergies-préferences.html"  class="active">Préférences ou allérgies</a></li>
+                    <li><a href="admin-statistiques.html" >Statistiques</a></li>
+                    <li><a href="admin-gestion-des-utilisateurs.html">Gestion d'utilisateurs</a></li>
+                </ul>
+            </nav>
+            <div class="profile-dropdown">
+                <img src="images/ii.svg"  alt="" class="profile-dropdown__btn">
+                <ul class="profile-dropdown__content">
+                    <li><a href="admin-mon-profile.html">Mon profile</a></li>
+                    <li><a href="admin_login%20.html">Se déconnecter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 
-  <main>
+<main>
     <h1>Allérgies</h1>
-    <div class="description">
-    <p>Donnez aux consommateurs l'option d'indiquer une allergie</p>
-    <div class="ajouter">
-    <input type="text" placeholder="Ajouter une allérgie"><img src="images/plus.png">
+    <div class="row-top">
+        <p>Donnez aux consommateurs l'option d'indiquer une allergie</p>
+        <a class="btn-with-image" href="admin-ajouter-alergie.html">
+            Ajouter une allérgie<img src="images/plus.png">
+        </a>
     </div>
-    </div>
-    
     <section class="allergies-section">
-    <div class="allergie-card card">
-    <div class="contenu">
-    <img src="images/allérgies_ic.png" alt="">
-    <label> some name or short description</label>
-    </div> 
+        <div class="allergie-card card">
+            <div class="contenu">
+                <img src="images/allérgies_ic.png" alt="">
+                <label> some name or short description</label>
+            </div>
 
-    <div class="modify-delet">
-    <img src="images/modify.png "  alt="">
-    <img src="images/delet.png"  alt=""> 
-    </div>   
-    </div>
+            <div class="modify-delet">
+                <img src="images/modify.png " alt="" class="btn-action-edit-allerg">
+                <img src="images/delet.png" alt="" class="btn-action-del-allerg">
+            </div>
+        </div>
+        <div class="allergie-card card">
+            <div class="contenu">
+                <img src="images/allérgies_ic.png" alt="">
+                <label> some name or short description</label>
+            </div>
 
-    <div class="allergie-card card">
-    <div class="contenu">
-    <img src="images/allérgies_ic.png" alt="">
-    <label> some name or short description</label>
-    </div> 
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div>
-    </div>
+            <div class="modify-delet">
+                <img src="images/modify.png " alt="" class="btn-action-edit-allerg">
+                <img src="images/delet.png" alt="" class="btn-action-del-allerg">
+            </div>
+        </div>
+        <div class="allergie-card card">
+            <div class="contenu">
+                <img src="images/allérgies_ic.png" alt="">
+                <label> some name or short description</label>
+            </div>
 
-    <div class="allergie-card card">
-    <div class="contenu">
-    <img src="images/allérgies_ic.png" alt="">
-    <label> some name or short description</label>
-    </div> 
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div> 
-    </div>
+            <div class="modify-delet">
+                <img src="images/modify.png " alt="" class="btn-action-edit-allerg">
+                <img src="images/delet.png" alt="" class="btn-action-del-allerg">
+            </div>
+        </div>
+        <div class="allergie-card card">
+            <div class="contenu">
+                <img src="images/allérgies_ic.png" alt="">
+                <label> some name or short description</label>
+            </div>
 
-    <div class="allergie-card card">
-    <div class="contenu">
-    <img src="images/allérgies_ic.png" alt="">
-    <label> some name or short description</label>
-    </div> 
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div>
-    </div>
+            <div class="modify-delet">
+                <img src="images/modify.png " alt="" class="btn-action-edit-allerg">
+                <img src="images/delet.png" alt="" class="btn-action-del-allerg">
+            </div>
+        </div>
+        <div class="allergie-card card">
+            <div class="contenu">
+                <img src="images/allérgies_ic.png" alt="">
+                <label> some name or short description</label>
+            </div>
 
-    <div class="allergie-card card">
-    <div class="contenu">
-    <img src="images/allérgies_ic.png" alt="">
-    <label> some name or short description</label>
-    </div> 
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div>    
-    </div>
+            <div class="modify-delet">
+                <img src="images/modify.png " alt="" class="btn-action-edit-allerg">
+                <img src="images/delet.png" alt="" class="btn-action-del-allerg">
+            </div>
+        </div>
+        <div class="allergie-card card">
+            <div class="contenu">
+                <img src="images/allérgies_ic.png" alt="">
+                <label> some name or short description</label>
+            </div>
 
-    <div class="allergie-card card">
-    <div class="contenu">
-    <img src="images/allérgies_ic.png" alt="">
-    <label> some name or short description</label>
-    </div> 
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div>   
-    </div> 
+            <div class="modify-delet">
+                <img src="images/modify.png " alt="" class="btn-action-edit-allerg">
+                <img src="images/delet.png" alt="" class="btn-action-del-allerg">
+            </div>
+        </div>
     </section>
     <h1>Préferences</h1>
-    <div class="description">
-    <p>Donnez aux consommateurs l'option d'indiquer une préférence</p>
-    <div class="ajouter">
-    <input type="text" placeholder="Ajouter une préférence"><img src="images/plus.png">
-    </div>
+    <div class="row-top">
+        <p>Donnez aux consommateurs l'option d'indiquer une préférence</p>
+        <a class="btn-with-image" href="admin-ajouter-preference.html">
+            Ajouter une préférence<img src="images/plus.png">
+        </a>
     </div>
 
     <section class="preferences-section">
 
-    <div class="preferences-card card">
-    <div class="contenu">
-    <img src="images/preférences_.png" alt="">
-     <label> some name or short description</label>
-     </div> 
-     <div class="modify-delet">
-     <img src="images/modify.png" alt="">
-     <img src="images/delet.png" alt=""> 
-     </div>   
-     </div>
-
-    <div class="preferences-card card">
-    <div class="contenu">
-    <img src="images/preférences_.png" alt="">
-    <label> some name or short description</label>
-    </div> 
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div>     
-    </div>
-
-    <div class="preferences-card card">
-    <div class="contenu">
-    <img src="images/preférences_.png" alt="">
-    <label> some name or short description</label>
-    </div> 
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div>
-    </div>
-
-    <div class="preferences-card card">
-    <div class="contenu">
-    <img src="images/preférences_.png" alt="">
-    <label> some name or short description</label>
-    </div> 
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div>
-    </div>
-
-    <div class="preferences-card card">
-    <div class="contenu">
-    <img src="images/preférences_.png" alt="">
-    <label> some name or short description</label>
-    </div> 
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div>
-    </div>
-
-    <div class="preferences-card card">
-    <div class="contenu">
-    <img src="images/preférences_.png" alt="">
-    <label> some name or short description</label>
-    </div>
-    <div class="modify-delet">
-    <img src="images/modify.png" alt="">
-    <img src="images/delet.png" alt=""> 
-    </div>
-    </div>
+        <div class="preferences-card card">
+            <div class="contenu">
+                <img src="images/preférences_.png" alt="">
+                <label> some name or short description</label>
+            </div>
+            <div class="modify-delet">
+                <img src="images/modify.png" alt="" class="btn-action-edit-pref">
+                <img src="images/delet.png" alt="" class="btn-action-del-pref">
+            </div>
+        </div>
+        <div class="preferences-card card">
+            <div class="contenu">
+                <img src="images/preférences_.png" alt="">
+                <label> some name or short description</label>
+            </div>
+            <div class="modify-delet">
+                <img src="images/modify.png" alt="" class="btn-action-edit-pref">
+                <img src="images/delet.png" alt="" class="btn-action-del-pref">
+            </div>
+        </div>
+        <div class="preferences-card card">
+            <div class="contenu">
+                <img src="images/preférences_.png" alt="">
+                <label> some name or short description</label>
+            </div>
+            <div class="modify-delet">
+                <img src="images/modify.png" alt="" class="btn-action-edit-pref">
+                <img src="images/delet.png" alt="" class="btn-action-del-pref">
+            </div>
+        </div>
+        <div class="preferences-card card">
+            <div class="contenu">
+                <img src="images/preférences_.png" alt="">
+                <label> some name or short description</label>
+            </div>
+            <div class="modify-delet">
+                <img src="images/modify.png" alt="" class="btn-action-edit-pref">
+                <img src="images/delet.png" alt="" class="btn-action-del-pref">
+            </div>
+        </div>
+        <div class="preferences-card card">
+            <div class="contenu">
+                <img src="images/preférences_.png" alt="">
+                <label> some name or short description</label>
+            </div>
+            <div class="modify-delet">
+                <img src="images/modify.png" alt="" class="btn-action-edit-pref">
+                <img src="images/delet.png" alt="" class="btn-action-del-pref">
+            </div>
+        </div>
+        <div class="preferences-card card">
+            <div class="contenu">
+                <img src="images/preférences_.png" alt="">
+                <label> some name or short description</label>
+            </div>
+            <div class="modify-delet">
+                <img src="images/modify.png" alt="" class="btn-action-edit-pref">
+                <img src="images/delet.png" alt="" class="btn-action-del-pref">
+            </div>
+        </div>
     </section>
-  </main>
+    <script src="js/main.js"></script>
+</main>
+<footer>
+    <nav class="menu-items row">
+        <ul class="menu-item-list">
+            <li><a href="admin-choisir-un-plat.html" >Plat de jour</a></li>
+            <li><a href="admin-laisser%20un%20avis%20.html" >Laisser un avis</a></li>
+            <li><a href="admin%20allergies-préferences.html" class="active">Préférences ou allérgies</a></li>
+            <li><a href="admin-statistiques.html" >Statistiques</a></li>
+            <li><a href="admin-gestion-des-utilisateurs.html">Gestion d'utilisateurs</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="social">
+            <img src="images/fb-ic.svg" alt="fb">
+            <img src="images/twitter-ic.svg" alt="twitter">
+            <img src="images/insta-ic.svg" alt="instagram">
+            <img src="images/youtube_ic.svg" alt="youtube">
+        </div>
+        <div class="partners">
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/ocp-logo.png" alt="" ></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+            <div class="logo-con"><img src="images/youcode_logo.png" alt="" class="ycode"></div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
