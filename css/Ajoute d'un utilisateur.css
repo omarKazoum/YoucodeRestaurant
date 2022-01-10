@@ -1,14 +1,4 @@
-body{
-    
-    box-sizing: border-box;
-    background-image: url("../images/image_bg.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover;
-    opacity: 1;
-    
-}
-
-main .contenu{ 
+main .contenu{
     display: flex;
     flex-direction:column;
     align-items: center;

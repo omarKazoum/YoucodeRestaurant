@@ -19,8 +19,13 @@ $(function(){
         );
     });
 
-    $(".user-remind").on("click",function(){
-        console.log("email envoyé");
+    $(".user-remind-pass").on("click",function(){
+        Swal.fire(
+            "Un email a été envoyé à cette utilisateur contenant ses information d'au" +
+            "thentification",
+            '',
+            'success'
+        );
     });
     var moreUsersShown=false;
     $(".other-users").hide();
@@ -31,8 +36,13 @@ $(function(){
             $(".other-users").show();
             moreUsersShown=!moreUsersShown;
     })
+    $(".btn-reset-pass").css('cursor','pointer');
     $(".btn-reset-pass").on("click",function(){
-        console.log("btn reset pass");
+        Swal.fire(
+            '',
+            'Votre mot de pass vous a été envoyé par email',
+            'success'
+        );
     })
     // admin prefs and allergies
     $(".btn-action-del-pref").on("click",function(){

@@ -140,7 +140,7 @@ header .mobile-drop-down .profile-dropdown{
     .profile-dropdown__content{
         z-index: 2;
         position: absolute;
-        width: 150px;
+        width: 180px;
         top: 2em;
         display: none;
         background-color: white;
